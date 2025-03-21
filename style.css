@@ -192,7 +192,7 @@ nav{
 
 .products-slider .products img{
     max-width: 180px;
-    max-height: 200;
+    max-height: 200px;
  
 }
 
@@ -265,4 +265,11 @@ footer{
     color: #fff;
     background: #131921;
     padding: 20px 60px;
+}
+
+.product-info{
+    display: grid;
+    grid-template-columns: auto auto;
+    max-width: 300px;
+    margin-bottom: 15px;
 }
