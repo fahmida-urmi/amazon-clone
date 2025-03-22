@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free International Returns - Amazon</title>
+    <link rel="stylesheet" href="style.css"> 
+    <style>
+            body{font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #EAEDED;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            background: white;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        .return-policy img {
+            width: 60%;
+            height: auto;
+            display: block;
+            margin: 0 auto 20px;
+            border-radius: 8px;
+        }
+        h1, h2 {
+            color: #111;
+            font-weight: bold;
+        }
+        ul, ol {
+            text-align: left;
+            padding-left: 20px;
+            line-height: 1.6;
+            font-size: 16px;
+        }
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background: #FF9900;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+            font-size: 13px;
+            font-weight: bold;
+            margin-top: 25px;
+        }
+        .btn:hover {
+            background: #E68A00;
+        }
+        footer {
+            margin-top: 30px;
+            background: #232F3E;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="/"> <img src="./assets/amazon_logo.png" width="100" alt="logo"></a>
+        <div class="nav-country">
+            <img src="./assets/location_icon.png" height="20">
+            <div>
+                <p>Deliver to</p>
+                <h1>Bangladesh</h1>
+            </div>
+          </div>
+    
+          <div class="nav-search">
+            <div class="nav-search-category">
+                <p>All</p>
+                <img src="./assets/dropdown_icon.png" height="12" alt="" >
+            </div>
+            <input type="text" class="nav-search-input" placeholder="Search Amazon">
+            <img src="./assets/search_icon.png" alt="" class="nav-search-icon">
+          </div>
+    
+          <div class="nav-language">
+              <img src="./assets/us_flag.png" alt="" width="25px">
+              <p>EN</p>
+              <img src="./assets/dropdown_icon.png" width="8px">
+          </div>
+          <div class="nav-text">
+             <p><a href="./signin.html"> Hello, Sign in</a></p>
+             <h1>Account & Lists <img src="./assets/dropdown_icon.png" alt="" width="8px"></h1>
+          </div>
+          <div class="nav-text">
+             <p>Return</p>
+             <h1>& Orders</h1>
+          </div>
+
+          <a href="./signin.css" class="mobile-user-icon" style="display: none;" >
+            <img src="./assets/user.png" alt="">
+          </a>
+    
+          <a href="./cart.html" class="nav-cart">
+          <img src="./assets/cart_icon.png" width="35px"  alt="">
+          <h4>Cart</h4>
+        </a>
+            
+    </nav>
+    
+    <div class="container">
+        <section class="return-policy">
+            <img src="/assets/box1-1.jpg" alt="Free International Returns">
+            <p>Amazon ensures a seamless shopping experience with **Free International Returns** for eligible items.</p>
+            
+            <h2>How It Works</h2>
+            <ul>
+                <li>Return your item within **30 days** of delivery.</li>
+                <li>No extra charge for international return shipping.</li>
+                <li>Choose between a **full refund** or an exchange.</li>
+                <li>Easy return process directly from your Amazon account.</li>
+            </ul>
+            
+            <h2>Return Process</h2>
+            <ol>
+                <li>Go to **Your Orders** in your Amazon account.</li>
+                <li>Select the item and click **Request a Return**.</li>
+                <li>Print the prepaid return label provided.</li>
+                <li>Pack and drop off your item at an authorized return center.</li>
+                <li>Get your refund within **5-7 business days** after return processing.</li>
+            </ol>
+            <button class="btn" id="return-btn">Start Return Process</button>
+        </section>
+    </div>
+    
+    <footer>
+        <p>&copy; 2025 Amazon. All rights reserved.</p>
+    </footer>
+    
+    <script>
+        document.getElementById("return-btn").addEventListener("click", function() {
+            alert("Redirecting to Amazon's return process page...");
+            window.location.href = "https://www.amazon.com/returns";
+        });
+    </script>
+</body>
+</html>

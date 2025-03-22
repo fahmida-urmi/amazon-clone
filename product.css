@@ -243,3 +243,33 @@ body{
     margin-top: 100px;
 }
 
+@media screen and (max-width: 900px) {
+    .product-display{
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .product-icons{
+        display: none;
+    }
+
+    .product-main-images img{
+        width: 100%;
+        padding: 20px;
+    }
+
+    .option{
+      padding: 6px 8px;
+    }
+
+    .option{
+        display: none;
+    }
+
+    .product-d-purchase{
+        max-width: 90%;
+        margin: 20px auto 10px;
+    }
+
+}

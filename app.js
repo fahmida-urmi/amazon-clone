@@ -41,3 +41,8 @@ for (const item of scrollContainer){
         item.scrollLeft += evt.deltaY
     })
 }
+
+document.getElementById("return-btn").addEventListener("click", function() {
+    alert("Redirecting to Amazon return process page...");
+    window.location.href = "https://www.amazon.com/returns";
+});
