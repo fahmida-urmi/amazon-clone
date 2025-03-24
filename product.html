@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product Page</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="product.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/product.css">
 </head>
 <body>
     
@@ -47,10 +47,13 @@
             <img src="./assets/user.png" alt="">
           </a>
     
-          <a href="./cart.html" class="nav-cart">
-          <img src="./assets/cart_icon.png" width="35px"  alt="">
-          <h4>Cart</h4>
-        </a>
+          <div class="cart-container">
+            <a href="./cart.html" class="cart-icon">
+                <span class="cart-count" id="cart-count">0</span>
+                <img src="./assets/ClipartKey_car.png" width="35px" alt="" class="cart-icon-img">
+            </a>
+            <span class="cart-text">Cart</span>
+           </div>
             
     </nav>
     

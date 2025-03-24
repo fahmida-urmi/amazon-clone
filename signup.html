@@ -3,27 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign up</title>
-    <link rel="stylesheet" href="/signin.css">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="./styles/signin.css">
+    
 </head>
 <body>
 
     <a href="/index.html"><img src="./assets/amazon_logo_dark.png" class="logo" alt="" width="100px"></a>
     <div class="signin-container">
         <h1 class="signin-title">Sign up</h1>
+        
         <h5 class="input-label">Your name</h5>
-        <input type="text" placeholder="First and last name">
+        <input type="text" id="name" placeholder="First and last name">
+        
         <h5 class="input-label">Mobile number or email</h5>
-        <input type="text">
+        <input type="text" id="email" placeholder="Email address">
+
         <h5 class="input-label">Password</h5>
-        <input type="password">
-        <input type="password" placeholder="At least 6 characters">
-        <button>Continue</button>
-        <p class="signin-condition">By continuing, you agree to Amazon'<span> Condition of Use and <span>Privacy Notice.</span></span> </p>
-        <p class="signin-help">&#9656 <span> Need help</span></p>
+        <input type="password" id="password" placeholder="At least 6 characters">
+        
+        <h5 class="input-label">Re-enter password</h5>
+        <input type="password" id="confirmPassword" placeholder="At least 6 characters">
+        
+        <button onclick="return validateForm()">Continue</button>
+        
+        <p class="signin-condition">By continuing, you agree to Amazon's <span>Condition of Use and Privacy Notice.</span></p>
+        <p class="signin-help">&#9656 <span>Need help?</span></p>
         <hr>
         <h4>Buying for work?</h4>
-        <p class="signin-business"> <span> Shop on Amazon Business </span></p>
+        <p class="signin-business"><span>Shop on Amazon Business</span></p>
     </div>
 
     <div class="signin-bottom">
@@ -32,19 +40,21 @@
         <hr>
     </div>
     
-   <a href="./signin.css">
-    <button class="sign-signup-btn">Login with Amazon account</button>
-   </a>
+    <a href="./signin.css">
+        <button class="sign-signup-btn">Login with Amazon account</button>
+    </a>
 
     <footer>
         <div class="footer-links">
-            <a href="#">Condition of USA</a>
+            <a href="#">Condition of Use</a>
             <a href="#">Privacy Notice</a>
             <a href="#">Help</a>
         </div>
-        <p class="footer-copyright">© 1996-2024, Amazon.com, Inc, or its affiliates </p>
+        <p class="footer-copyright">© 1996-2024, Amazon.com, Inc, or its affiliates</p>
     </footer>
-    
-    
+
+
+
+    <script src="./JS/app.js"> </script>
 </body>
 </html>

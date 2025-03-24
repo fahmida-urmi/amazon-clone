@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="./styles/cart.css">
+    <link rel="stylesheet" href="./styles/style.css">
+
+    <style>
+
+.product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    padding: 20px;
+}
+
+.product img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.product h3 {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.product p {
+    font-size: 14px;
+    color: #555;
+}
+
+.product button {
+    background-color: #ff9900;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.product button:hover {
+    background-color: #e68a00;
+}
+
+
+.cart-section1 {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 70%;
+}
+
+.cart-section h2 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.cart-summary {
+    background: #fff;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.cart-summary p {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.final-total {
+    color: #B12704;
+    font-size: 18px;
+}
+
+#checkout-button {
+    width: 100%;
+    background-color: #ffd814;
+    color: #111;
+    font-weight: bold;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+#checkout-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.error-message {
+    color: #ff4d4d;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+
+#product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Creates flexible columns */
+    gap: 20px; /* Adds spacing between items */
+    justify-content: center; /* Centers the grid */
+}
+
+
+    </style>
+
+</head>
+
+<body>
+
+    <nav>
+        <a href="/"> <img src="./assets/amazon_logo.png" width="100" alt="logo"></a>
+        <div class="nav-country">
+            <img src="./assets/location_icon.png" height="20">
+            <div>
+                <p>Deliver to</p>
+                <h1>Bangladesh</h1>
+            </div>
+          </div>
+    
+          <div class="nav-search">
+            <div class="nav-search-category">
+                <p>All</p>
+                <img src="./assets/dropdown_icon.png" height="12" alt="">
+            </div>
+            <input type="text" class="nav-search-input" placeholder="Search Amazon">
+            <img src="./assets/search_icon.png" alt="" class="nav-search-icon">
+          </div>
+    
+          <div class="nav-language">
+              <img src="./assets/us_flag.png" alt="" width="25px">
+              <p>EN</p>
+              <img src="./assets/dropdown_icon.png" width="8px">
+          </div>
+          <div class="nav-text">
+            <p><a href="./signin.html"> Hello, Sign in</a></p>
+             <h1>Account & Lists <img src="./assets/dropdown_icon.png" alt="" width="8px"></h1>
+          </div>
+          <div class="nav-text">
+             <p>Return</p>
+             <h1>& Orders</h1>
+          </div>
+    
+    
+          <a href="./signin.css" class="mobile-user-icon" style="display: none;" >
+            <img src="./assets/user.png" alt="">
+          </a>
+          
+          <div class="cart-container" onclick="toggleCart()">
+            <a href="#" class="cart-icon">
+            <span class="cart-count" id="cart-count">0</span>
+            <img src="./assets/ClipartKey_car.png" width="35px" alt="" class="cart-icon-img">
+            <span class="cart-text">Cart</span>
+           </a>
+        </div>
+    </nav>
+
+
+    <div class="container">
+        <!-- Product Section -->
+        <div class="products" id="products-section">
+            <h2>Products</h2>
+            <div id="product-list"></div>
+        </div>
+    
+
+
+    
+        <!-- Cart Section -->
+        <div class="cart-section1 cart-summary-right" id="cart-section">
+            <h2>Shopping Cart</h2>
+            <div id="cart-items"></div>
+            <div class="cart-summary">
+                <p>Subtotal: <span id="cart-subtotal">$0.00</span></p>
+                <p id="promo-message" class="error-message" style="display: none;"></p>
+               
+                <p class="final-total">Final Total: <span id="cart-total">$0.00</span></p>
+                <p id="checkout-message" class="error-message" style="display: none;">
+                    Add items to your cart to make a purchase.
+                </p>
+                <button class=".amazon-btn" id="checkout-button" onclick="checkout()" disabled>Proceed to Checkout</button>
+            </div>
+        </div>
+        
+        
+    </div>
+    <div id="toast" class="toast">Item has been added to the cart!</div>
+
+    </div>
+
+
+
+
+    <script src="./JS/script.js">  </script>
+</body>
+</html>
