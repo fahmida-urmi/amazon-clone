@@ -543,6 +543,32 @@ footer{
   
 
   
+  .see-more-btn{
+    background-color:#ff9900; /* Amazon orange */
+      color: #ffffffdf;
+      border: none;
+      padding: 10px 14px;
+      margin: 10px;
+      font-size: 16px;
+      font-weight: bold;
+      border-radius: 5px;
+      cursor: pointer;
+      transition:all 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      padding: 8px 10px;
+      width: 40%;
+     position: relative;
+     left: 130%;
+  }
+  
+
+  
+  
+  .see-more-btn:hover {
+    background-color:#ff9900dc; /* Slightly lighter orange */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  
   
   #checkout-button:hover {
     background-color: #ffac31; /* Slightly lighter orange */
@@ -561,6 +587,8 @@ footer{
     color: #bc2b2b;
     padding: 20px;
 }
+
+
 
 @media screen and (max-width: 900px) {
     nav {

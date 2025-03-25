@@ -23,6 +23,88 @@ const bestProducts = [
     },
     {
         id: 3,
+        name: "Apple iPhone 16 Pro Max",
+        price: 1299.00,
+        discount: 1149.00, // 12% discount
+        image: "./images/MYX13QNA_1_Classic.png",
+        description: "Apple iPhone 16 Pro Max 512GB 5G SIM Free Smartphone - White Titanium",
+        rating: Math.floor(Math.random() * 5) + 1,
+    },
+    {
+        id: 4,
+        name: "Apple iPad Wi-Fi Tablet",
+        price: 249,
+        discount: 219, // 12% discount
+        image: "./images/MK2K3LLA_1_Supersize.jpg",
+        description: "Apple iPad 2021 10.2 Space Grey 64GB Wi-Fi Tablet - Global Spec",
+        rating: Math.floor(Math.random() * 5) + 1,
+    },
+    {
+        id: 5,
+        name: "Apple MacBook Air",
+        price: 649.97,
+        discount: 589.99, // 10% discount
+        image: "./images/A1MGN63BA_1_7781349_LargeProductImage.jpg",
+        description: "Apple MacBook Air 13.3 Inch M1 8GB RAM 256GB SSD - Space Grey",
+        rating: Math.floor(Math.random() * 5) + 1,
+    },
+    {
+        id: 6,
+        name: "Microsoft Surface 7 Snapdragon",
+        price: 1999.00,
+        discount: 1749.00, // 12.5% discount
+        image: "./images/ZIR-00003_1_Supersize.png",
+        description: "Microsoft Surface 7 Snapdragon X Elite 16GB RAM 1TB SSD 13.8 Inch Touchscreen Windows 11 Pro Laptop",
+        rating: Math.floor(Math.random() * 5) + 1,
+    },
+    {
+        id: 7,
+        name: "Microsoft Surface 7 Snapdragon",
+        price: 1999.00,
+        discount: 1749.00, // 12.5% discount
+        image: "./images/ZIR-00003_1_Supersize.png",
+        description: "Microsoft Surface 7 Snapdragon X Elite 16GB RAM 1TB SSD 13.8 Inch Touchscreen Windows 11 Pro Laptop",
+        rating: Math.floor(Math.random() * 5) + 1,
+    },
+    {
+        id: 8,
+        name: "Microsoft Surface 7 Snapdragon",
+        price: 1999.00,
+        discount: 1749.00, // 12.5% discount
+        image: "./images/ZIR-00003_1_Supersize.png",
+        description: "Microsoft Surface 7 Snapdragon X Elite 16GB RAM 1TB SSD 13.8 Inch Touchscreen Windows 11 Pro Laptop",
+        rating: Math.floor(Math.random() * 5) + 1,
+    },
+    
+    {
+        id: 9,
+        name: "Apple MacBook Air",
+        price: 649.97,
+        discount: 589.99, // 10% discount
+        image: "./images/A1MGN63BA_1_7781349_LargeProductImage.jpg",
+        description: "Apple MacBook Air 13.3 Inch M1 8GB RAM 256GB SSD - Space Grey",
+        rating: Math.floor(Math.random() * 5) + 1,
+    },
+    {
+        id: 4,
+        name: "Microsoft Surface 7 Snapdragon",
+        price: 1999.00,
+        discount: 1749.00, // 12.5% discount
+        image: "./images/ZIR-00003_1_Supersize.png",
+        description: "Microsoft Surface 7 Snapdragon X Elite 16GB RAM 1TB SSD 13.8 Inch Touchscreen Windows 11 Pro Laptop",
+        rating: Math.floor(Math.random() * 5) + 1,
+    },
+    {
+        id: 5,
+        name: "Fujitsu LIFEBOOK A3511",
+        price: 388.93,
+        discount: 349.99, // 10% discount
+        image: "./images/61yWngjvgWL._AC_UL480_QL65_.jpg",
+        description: "Fujitsu LIFEBOOK A3511 Intel Core i3-1115G4 15.6 FHD Display 8GB DDR4-SDRAM 256GB SSD Wi-Fi 6 (802.11ax) Windows 11 Pro",
+        rating: Math.floor(Math.random() * 5) + 1,
+    },
+    {
+        id: 3,
         name: "Apple MacBook Air",
         price: 649.97,
         discount: 589.99, // 10% discount
@@ -51,7 +133,6 @@ const bestProducts = [
 ];
 
 let cart = [];
-
 
 // Toggle Cart Visibility'
 document.getElementById('search-input').addEventListener('input', function () {
@@ -92,8 +173,6 @@ function displayFilteredProducts(products) {
 }
 
 
-
-// Toggle Cart Visibility'
 
 
 function toggleCart() {
@@ -174,6 +253,8 @@ function displayCart() {
     });
 
     updateCartSummary(total);
+
+    
 }
 
 // Update item quantity in the cart
@@ -234,12 +315,15 @@ function generateStars(rating) {
     return stars;
 }
 
+let productsPerPage = 9;
 
-
-// Display product list
 function displayProducts() {
     const productContainer = document.getElementById("product-list");
-    bestProducts.forEach((product) => {
+    productContainer.innerHTML = ""; // Clear existing products
+
+    // Only display the first 'productsPerPage' products
+    const productsToDisplay = bestProducts.slice(0, productsPerPage);
+    productsToDisplay.forEach((product) => {
         const productDiv = document.createElement("div");
         productDiv.classList.add("product");
         productDiv.innerHTML = `
@@ -247,8 +331,8 @@ function displayProducts() {
             <h3>${product.name}</h3>
             <p>${product.description}</p>
             <div class="pPrice">
-             <p class="original-price"><s>$${product.price.toFixed(2)}</s> </p>
-            <p class="discount-price"><strong>$${product.discount.toFixed(2)}</strong></p>
+                <p class="original-price"><s>$${product.price.toFixed(2)}</s></p>
+                <p class="discount-price"><strong>$${product.discount.toFixed(2)}</strong></p>
             </div>
             <div class="review-stars">${generateStars(product.rating)}</div>
             <button onclick="addToCart(${product.id})">Add to Cart</button>
@@ -256,7 +340,17 @@ function displayProducts() {
         productContainer.appendChild(productDiv);
     });
 
-    
+    // Add "See More" button if there are more products to show
+    if (bestProducts.length > productsPerPage) {
+        const seeMoreBtn = document.createElement("button");
+        seeMoreBtn.classList.add("see-more-btn");
+        seeMoreBtn.textContent = "See More";
+        seeMoreBtn.onclick = () => {
+            productsPerPage += 8;
+            displayProducts(); // Re-render with more products
+        };
+        productContainer.appendChild(seeMoreBtn);
+    }
 }
 
 displayProducts();
@@ -277,7 +371,7 @@ displayProducts();
 
 
 
-
+console.log(bestProducts.length);
 
 
 // 

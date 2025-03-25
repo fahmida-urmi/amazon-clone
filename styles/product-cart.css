@@ -53,6 +53,14 @@ body {
   justify-content: center;
   padding: 20px;
 }
+/* 
+#toy-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+} */
 
 .product {
   display: flex;

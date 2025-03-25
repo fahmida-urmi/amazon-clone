@@ -3,14 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Toys Under $25</title>
-    <link rel="stylesheet" href="./styles/style.css"> <!-- Link to your CSS -->
-    <script src="script.js" defer></script> <!-- Link to your JS file -->
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> <!-- FontAwesome for stars -->
+    <title>Amazon Clone</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/product-cart.css">
+
+    <style>
+        
+#toy-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 2fr));
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+} 
+
+.seeMore-btn{
+    padding: 8px 10px;
+    width: 30%;
+    position: relative;
+    left: 190%;
+    margin: 10px;
+}
+
+
+
+
+    </style>
+ 
 </head>
 <body>
-
-    <!-- Navigation Bar -->
     <nav>
         <a href="/"> <img src="./assets/amazon_logo.png" width="100" alt="logo"></a>
         <div class="nav-country">
@@ -26,10 +48,10 @@
                 <p>All</p>
                 <img src="./assets/dropdown_icon.png" height="12" alt="">
             </div>
-            <input type="text" class="nav-search-input" placeholder="Search Amazon">
+            <input type="text" id="search-input" class="nav-search-input" placeholder="Search Amazon">
             <img src="./assets/search_icon.png" alt="" class="nav-search-icon">
-          </div>
-    
+        </div>
+        
           <div class="nav-language">
               <img src="./assets/us_flag.png" alt="" width="25px">
               <p>EN</p>
@@ -48,7 +70,8 @@
           <a href="./signin.css" class="mobile-user-icon" style="display: none;" >
             <img src="./assets/user.png" alt="">
           </a>
-          
+
+
           <div class="cart-container" onclick="toggleCart()">
             <a href="#" class="cart-icon">
             <span class="cart-count" id="cart-count">0</span>
@@ -57,29 +80,63 @@
            </a>
         </div>
     </nav>
+    
+
+    
+
+    
 
 
 
-    <header>
-        <h1>🎁 Toys Under $25 🎈</h1>
-        <a href="index.html">
-            <button class="back-btn">🏠 Back to Home</button>
-        </a>
-    </header>
+<div class="nav-bottom" id="nav-bottom">
+    <div>
+        <img src="./assets/menu_icon.png" width="25px" alt="">
+        <p>All</p>
+    </div>
+    <a href="./index.html"><p>Home</p></a>
+    <p>Today's Deals</p>
+    <p>Customer Service</p>
+    <p>Registry</p>
+    <p>Gift Cards</p>
+    <p>Sell</p>
+</div>
 
-    <!-- Toys Under $25 Section -->
-    <section class="products">
-        <h2>Best Affordable Toys for Kids</h2>
-        <div id="toy-list" class="product-container">
-            <!-- JavaScript will dynamically insert products here -->
-        </div>
-    </section>
+<div class="container">
+    
 
-    <!-- Shopping Cart Button -->
-    <div class="cart-icon">
-        🛒 <span id="cart-count">0</span>
+    <!-- Toy Product Section -->
+    <div class="products" id="toys-section">
+        <h2>Toy Section</h2>
+        <div id="toy-list" class="product-grid"></div>
     </div>
 
-    <script src="./JS/script.js"> </script>
+    <!-- Cart Section -->
+    <div class="cart-section1 cart-summary-right" id="cart-section">
+        <div class="pCart-section">
+            <h2>Shopping Cart</h2>
+            <div id="cart-items"></div>
+            <div class="cart-summary">
+                <p>Subtotal: <span id="cart-subtotal">$0.00</span></p>
+                <p id="promo-message" class="error-message" style="display: none;"></p>
+                <p class="final-total">Final Total: <span id="cart-total">$0.00</span></p>
+                <p id="checkout-message" class="error-message" style="display: none;">
+                    Add items to your cart to make a purchase.
+                </p>
+                <button class="amazon-btn" id="checkout-button" onclick="checkout()" disabled>Proceed to Checkout</button>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+<div id="toast" class="toast">Item has been added to the cart!</div>
+
+
+
+    <script src="./JS/app.js">  </script>
+    <script src="./JS/toy.js">   </script>
+
+
 </body>
 </html>
