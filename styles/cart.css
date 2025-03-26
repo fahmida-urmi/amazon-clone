@@ -25,6 +25,9 @@ top: 40%;
   margin-right: 20px;
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: relative !important;
+  top: 30%;
+
 }
 
 .products h2 {
@@ -183,6 +186,13 @@ top: 40%;
   padding: 20px;
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-top: 160px;
+  
+}
+
+.main{
+  position: relative;
+  top: 140%;
 }
 
 /* Make cart section initially hidden */
@@ -227,10 +237,6 @@ justify-content: center;
 }
 
 
-.final-total {
-  color: #B12704;
-  font-size: 18px;
-}
 .promo-code input {
   padding: 8px 10px;
   outline: none;
@@ -322,6 +328,7 @@ flex-direction: column;
 align-items: center;
 justify-content: flex-start;
 width: 100%;
+
 }
 
 
@@ -402,9 +409,7 @@ width: 100%;
           margin-left: 20px;
       }
 
-      .promo-code {
-          margin-top: 10px;
-      }
+      
 
       .cart-summary-right button {
           margin-top: 10px;
