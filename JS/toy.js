@@ -1,84 +1,88 @@
-const bestToys = [
+const allProducts = [
     {
         id: 1,
-        name: "Apple iPhone 16 Pro Max",
-        price: 1299.00,
-        discount: 1149.00,
-        image: "./images/MYX13QNA_1_Classic.png",
-        description: "Apple iPhone 16 Pro Max 512GB 5G SIM Free Smartphone - White Titanium",
+        name: "3PCS Suction Cup Spinner Toy",
+        price: 567,
+        discount: 68,
+        image: "./assets/toy1.jpeg",
+        description: "A set of three suction cup spinner toys designed for baby bath time, promoting sensory development and fun.",
         rating: Math.floor(Math.random() * 5) + 1,
     },
     {
         id: 2,
-        name: "Apple iPad Wi-Fi Tablet",
-        price: 249,
-        discount: 219,
-        image: "./images/MK2K3LLA_1_Supersize.jpg",
-        description: "Apple iPad 2021 10.2 Space Grey 64GB Wi-Fi Tablet - Global Spec",
+        name: "Baby Bath Elephant Water Spray Toy",
+        price: 337,
+        discount: 68,
+        image: "./assets/toy2.jpeg",
+        description: "A cute elephant-shaped water spray toy for babies, making bath time enjoyable with water spraying fun.",
         rating: Math.floor(Math.random() * 5) + 1,
     },
     {
         id: 3,
-        name: "Apple MacBook Air",
-        price: 649.97,
-        discount: 589.99,
-        image: "./images/A1MGN63BA_1_7781349_LargeProductImage.jpg",
-        description: "Apple MacBook Air 13.3 Inch M1 8GB RAM 256GB SSD - Space Grey",
+        name: "Manhattan Star Ball Soft Silicone Rattle",
+        price: 389,
+        discount: 75,
+        image: "./assets/toy3.jpeg",
+        description: "A soft silicone rattle ball that aids in teething and sensory development for infants.",
         rating: Math.floor(Math.random() * 5) + 1,
     },
     {
-        id: 1,
-        name: "Apple iPhone 16 Pro Max",
-        price: 1299.00,
-        discount: 1149.00,
-        image: "./images/MYX13QNA_1_Classic.png",
-        description: "Apple iPhone 16 Pro Max 512GB 5G SIM Free Smartphone - White Titanium",
+        id: 4,
+        name: "5pcs Colorful Shaking Jhunjhuni Toy Set",
+        price: 989,
+        discount: 40,
+        image: "./assets/toy5.jpeg",
         rating: Math.floor(Math.random() * 5) + 1,
     },
     {
-        id: 2,
-        name: "Apple iPad Wi-Fi Tablet",
-        price: 249,
-        discount: 219,
-        image: "./images/MK2K3LLA_1_Supersize.jpg",
-        description: "Apple iPad 2021 10.2 Space Grey 64GB Wi-Fi Tablet - Global Spec",
+        id: 5,
+        name: "HelloKimi 7PCS Baby Rattles Set",
+        price: 1079,
+        discount: 40,
+        image: "./assets/toy4.jpeg",
         rating: Math.floor(Math.random() * 5) + 1,
     },
     {
-        id: 3,
-        name: "Apple MacBook Air",
-        price: 649.97,
-        discount: 589.99,
-        image: "./images/A1MGN63BA_1_7781349_LargeProductImage.jpg",
-        description: "Apple MacBook Air 13.3 Inch M1 8GB RAM 256GB SSD - Space Grey",
+        id: 6,
+        name: "Soft Cartoon Baby Cloth Book",
+        price: 191,
+        discount: 44,
+        image: "./assets/toy6.jpeg",
         rating: Math.floor(Math.random() * 5) + 1,
     },
     {
-        id: 3,
-        name: "Apple MacBook Air",
-        price: 649.97,
-        discount: 589.99,
-        image: "./images/A1MGN63BA_1_7781349_LargeProductImage.jpg",
-        description: "Apple MacBook Air 13.3 Inch M1 8GB RAM 256GB SSD - Space Grey",
-        rating: Math.floor(Math.random() * 5) + 1,
-    },
-    
-    {
-        id: 3,
-        name: "Apple MacBook Air",
-        price: 649.97,
-        discount: 589.99,
-        image: "./images/A1MGN63BA_1_7781349_LargeProductImage.jpg",
-        description: "Apple MacBook Air 13.3 Inch M1 8GB RAM 256GB SSD - Space Grey",
+        id: 7,
+        name: "RFL Toys Frogy Slider",
+        price: 2726,
+        discount: 6,
+        image: "./assets/toy7.jpeg",
         rating: Math.floor(Math.random() * 5) + 1,
     },
     {
-        id: 3,
-        name: "Apple MacBook Air",
-        price: 649.97,
-        discount: 589.99,
-        image: "./images/A1MGN63BA_1_7781349_LargeProductImage.jpg",
-        description: "Apple MacBook Air 13.3 Inch M1 8GB RAM 256GB SSD - Space Grey",
+        id: 8,
+        name: "RFL Playtime Yao Yao Fish Toy",
+        price: 1880,
+        discount: 6,
+        image: "./assets/toy8.jpeg",
+        description: "An interactive fish toy that moves and makes sounds, captivating babies' attention.",
+        rating: Math.floor(Math.random() * 5) + 1,
+    },
+    {
+        id: 9,
+        name: "RFL Playtime Chicken Rider",
+        price: 1520,
+        discount: 6,
+        image: "./assets/toy9.jpeg",
+        description: "A chicken-themed ride-on toy that encourages physical activity and balance in toddlers.",
+        rating: Math.floor(Math.random() * 5) + 1,
+    },
+    {
+        id: 10,
+        name: "Baby Walker with Music and Light",
+        price: 2650,
+        discount: 7,
+        image:"./assets/toy10.jpeg",
+        description: "An interactive baby walker featuring music and lights, supporting babies' first steps.",
         rating: Math.floor(Math.random() * 5) + 1,
     }
 ];
@@ -89,7 +93,7 @@ let cart = [];
 
 document.getElementById('search-input').addEventListener('input', function () {
     const query = this.value.toLowerCase();
-    const filteredProducts = bestProducts.filter(product => {
+    const filteredProducts = allProducts.filter(product => {
         return product.name.toLowerCase().includes(query) || product.description.toLowerCase().includes(query);
     });
 
@@ -98,8 +102,8 @@ document.getElementById('search-input').addEventListener('input', function () {
 });
 
 // Function to display the filtered products
-function displayFilteredProducts(products) {
-    const productContainer = document.getElementById("product-list");
+function displayFilteredProducts(products) { allProducts
+    const productContainer = document.getElementById("toy-list");
     productContainer.innerHTML = ""; // Clear existing products
 
     if (products.length === 0) {
@@ -143,7 +147,7 @@ function toggleCart() {
 
 // Add product to cart
 function addToCart(productId) {
-    const product = bestToys.find((p) => p.id === productId);
+    const product = allProducts.find((p) => p.id === productId);
     if (!product) return;
 
     const existingItem = cart.find((item) => item.id === productId);
@@ -243,13 +247,13 @@ function showToast(message) {
 }
 
 // Display toys on the page
-function displayToys() {
+function displayProducts() {
     const productContainer = document.getElementById("toy-list");
     productContainer.innerHTML = "";
 
     const initialCount = 8;
-    let visibleProducts = bestToys.slice(0, initialCount);
-    let hiddenProducts = bestToys.slice(initialCount);
+    let visibleProducts = allProducts.slice(0, initialCount);
+    let hiddenProducts = allProducts.slice(initialCount);
 
     function renderProducts(products) {
         products.forEach((product) => {
@@ -297,4 +301,4 @@ function checkout() {
 }
 
 // Display products on page load
-displayToys();
+displayProducts();

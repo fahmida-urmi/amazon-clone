@@ -1,86 +1,113 @@
-const bestToys = [
+const allProducts = [
     {
         id: 1,
-        name: "Apple iPhone 16 Pro Max",
-        price: 1299.00,
-        discount: 1149.00,
-        image: "./images/MYX13QNA_1_Classic.png",
-        description: "Apple iPhone 16 Pro Max 512GB 5G SIM Free Smartphone - White Titanium",
+        name: "Hill's Science Diet Adult Sensitive Stomach & Skin Chicken Recipe Dry Cat Food",
+        price: 18.99,
+        discount: 14.99,
+        image: "./assets/pet-food1.jpeg",
+        description: "Digestive health and skin care formula for adult cats with sensitive stomachs.",
         rating: Math.floor(Math.random() * 5) + 1,
     },
     {
         id: 2,
-        name: "Apple iPad Wi-Fi Tablet",
-        price: 249,
-        discount: 219,
-        image: "./images/MK2K3LLA_1_Supersize.jpg",
-        description: "Apple iPad 2021 10.2 Space Grey 64GB Wi-Fi Tablet - Global Spec",
+        name: "Purina Pro Plan Savor Adult Shredded Blend Chicken & Rice Formula Dry Dog Food",
+        price: 21.99,
+        discount: 17.99,
+        image: "./assets/pet-food2.jpeg",
+        description: "Premium dog food with live probiotics for digestive health and a great taste.",
         rating: Math.floor(Math.random() * 5) + 1,
     },
     {
         id: 3,
-        name: "Apple MacBook Air",
-        price: 649.97,
-        discount: 589.99,
-        image: "./images/A1MGN63BA_1_7781349_LargeProductImage.jpg",
-        description: "Apple MacBook Air 13.3 Inch M1 8GB RAM 256GB SSD - Space Grey",
+        name: "Royal Canin Size Health Nutrition Small Adult Formula Dry Dog Food",
+        price: 27.99,
+        discount: 24.99,
+        image: "./assets/pet-food3.jpeg",
+        description: "Tailored nutrition for small breed adult dogs with a focus on healthy digestion.",
         rating: Math.floor(Math.random() * 5) + 1,
     },
     {
-        id: 1,
-        name: "Apple iPhone 16 Pro Max",
-        price: 1299.00,
-        discount: 1149.00,
-        image: "./images/MYX13QNA_1_Classic.png",
-        description: "Apple iPhone 16 Pro Max 512GB 5G SIM Free Smartphone - White Titanium",
+        id: 4,
+        name: "Hill's Science Diet Adult 7+ Chicken Recipe Dry Dog Food",
+        price: 22.99,
+        discount: 18.99,
+        image: "./assets/pet-food4.jpeg",
+        description: "Balanced nutrition for senior dogs with high-quality protein to support muscle maintenance.",
         rating: Math.floor(Math.random() * 5) + 1,
     },
     {
-        id: 2,
-        name: "Apple iPad Wi-Fi Tablet",
-        price: 249,
-        discount: 219,
-        image: "./images/MK2K3LLA_1_Supersize.jpg",
-        description: "Apple iPad 2021 10.2 Space Grey 64GB Wi-Fi Tablet - Global Spec",
+        id: 5,
+        name: "Iams ProActive Health Adult Minichunks Chicken Dog Food",
+        price: 28.99,
+        discount: 23.99,
+        image: "./assets/pet-food5.jpeg",
+        description: "Premium dry dog food with real chicken, tailored for adult dogs to maintain healthy digestion.",
         rating: Math.floor(Math.random() * 5) + 1,
     },
     {
-        id: 3,
-        name: "Apple MacBook Air",
-        price: 649.97,
-        discount: 589.99,
-        image: "./images/A1MGN63BA_1_7781349_LargeProductImage.jpg",
-        description: "Apple MacBook Air 13.3 Inch M1 8GB RAM 256GB SSD - Space Grey",
+        id: 6,
+        name: "Blue Buffalo Life Protection Formula Adult Chicken & Brown Rice Recipe Dry Dog Food",
+        price: 45.99,
+        discount: 39.99,
+        image: "./assets/pet-food6.jpeg",
+        description: "Natural dog food with chicken and brown rice, designed to support immune system health.",
         rating: Math.floor(Math.random() * 5) + 1,
     },
     {
-        id: 3,
-        name: "Apple MacBook Air",
-        price: 649.97,
-        discount: 589.99,
-        image: "./images/A1MGN63BA_1_7781349_LargeProductImage.jpg",
-        description: "Apple MacBook Air 13.3 Inch M1 8GB RAM 256GB SSD - Space Grey",
-        rating: Math.floor(Math.random() * 5) + 1,
-    },
-    
-    {
-        id: 3,
-        name: "Apple MacBook Air",
-        price: 649.97,
-        discount: 589.99,
-        image: "./images/A1MGN63BA_1_7781349_LargeProductImage.jpg",
-        description: "Apple MacBook Air 13.3 Inch M1 8GB RAM 256GB SSD - Space Grey",
+        id: 7,
+        name: "Natural Balance L.I.D. Limited Ingredient Diets Sweet Potato & Fish Formula Dry Dog Food",
+        price: 38.99,
+        discount: 32.99,
+        image: "./assets/pet-food7.jpeg",
+        description: "Specially formulated limited ingredient diet to support sensitive dogs with food allergies.",
         rating: Math.floor(Math.random() * 5) + 1,
     },
     {
-        id: 3,
-        name: "Apple MacBook Air",
-        price: 649.97,
-        discount: 589.99,
-        image: "./images/A1MGN63BA_1_7781349_LargeProductImage.jpg",
-        description: "Apple MacBook Air 13.3 Inch M1 8GB RAM 256GB SSD - Space Grey",
+        id: 8,
+        name: "Purina ONE Natural Sensitive Skin & Stomach Salmon & Rice Formula Dry Dog Food",
+        price: 27.99,
+        discount: 22.99,
+        image: "./assets/pet-food8.jpeg",
+        description: "A natural, sensitive stomach formula to help dogs with skin and stomach sensitivities.",
+        rating: Math.floor(Math.random() * 5) + 1,
+    },
+    {
+        id: 9,
+        name: "Merrick Grain-Free Texas Beef & Sweet Potato Recipe Dry Dog Food",
+        price: 48.99,
+        discount: 43.99,
+        image: "./assets/pet-food9.jpeg",
+        description: "High-quality beef and sweet potato formula with no grains, perfect for sensitive dogs.",
+        rating: Math.floor(Math.random() * 5) + 1,
+    },
+    {
+        id: 10,
+        name: "Wellness CORE RawRev High-Protein, Raw, Freeze-Dried Turkey & Chicken Recipe Dry Dog Food",
+        price: 34.99,
+        discount: 29.99,
+        image: "./assets/pet-food10.jpeg",
+        description: "High-protein dog food with real meat and freeze-dried raw pieces for optimal health.",
+        rating: Math.floor(Math.random() * 5) + 1,
+    },
+    {
+        id: 11,
+        name: "Taste of the Wild High Prairie Canine Recipe with Roasted Bison & Roasted Roam Dry Dog Food",
+        price: 43.99,
+        discount: 39.99,
+        image: "./assets/pet-food11.jpeg",
+        description: "Grain-free, protein-rich dog food made with real roasted bison and roasted lamb.",
+        rating: Math.floor(Math.random() * 5) + 1,
+    },
+    {
+        id: 12,
+        name: "Orijen Original Dry Dog Food",
+        price: 55.99,
+        discount: 49.99,
+        image: "./assets/pet-food12.jpeg",
+        description: "High-protein dog food with 85% poultry, fish, and egg ingredients, designed for all life stages.",
         rating: Math.floor(Math.random() * 5) + 1,
     }
+    
 ];
 
 let cart = [];
@@ -89,7 +116,7 @@ let cart = [];
 
 document.getElementById('search-input').addEventListener('input', function () {
     const query = this.value.toLowerCase();
-    const filteredProducts = bestProducts.filter(product => {
+    const filteredProducts = allProducts.filter(product => {
         return product.name.toLowerCase().includes(query) || product.description.toLowerCase().includes(query);
     });
 
@@ -98,8 +125,8 @@ document.getElementById('search-input').addEventListener('input', function () {
 });
 
 // Function to display the filtered products
-function displayFilteredProducts(products) {
-    const productContainer = document.getElementById("product-list");
+function displayFilteredProducts(products) { allProducts
+    const productContainer = document.getElementById("toy-list");
     productContainer.innerHTML = ""; // Clear existing products
 
     if (products.length === 0) {
@@ -143,7 +170,7 @@ function toggleCart() {
 
 // Add product to cart
 function addToCart(productId) {
-    const product = bestToys.find((p) => p.id === productId);
+    const product = allProducts.find((p) => p.id === productId);
     if (!product) return;
 
     const existingItem = cart.find((item) => item.id === productId);
@@ -243,13 +270,13 @@ function showToast(message) {
 }
 
 // Display toys on the page
-function displayToys() {
+function displayProducts() {
     const productContainer = document.getElementById("toy-list");
     productContainer.innerHTML = "";
 
     const initialCount = 8;
-    let visibleProducts = bestToys.slice(0, initialCount);
-    let hiddenProducts = bestToys.slice(initialCount);
+    let visibleProducts = allProducts.slice(0, initialCount);
+    let hiddenProducts = allProducts.slice(initialCount);
 
     function renderProducts(products) {
         products.forEach((product) => {
@@ -297,4 +324,4 @@ function checkout() {
 }
 
 // Display products on page load
-displayToys();
+displayProducts();

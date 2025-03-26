@@ -1,84 +1,110 @@
-const bestToys = [
+const allProducts = [
     {
         id: 1,
-        name: "Apple iPhone 16 Pro Max",
-        price: 1299.00,
-        discount: 1149.00,
-        image: "./images/MYX13QNA_1_Classic.png",
-        description: "Apple iPhone 16 Pro Max 512GB 5G SIM Free Smartphone - White Titanium",
+        name: "ANRABESS Women's Long Sleeve V Neck Sweater",
+        price: 23.99,
+        discount: 16.99,
+        image: "./assets/fashion-mart1.webp",
+        description: "Casual loose fit lightweight sweater, perfect for fall fashion.",
         rating: Math.floor(Math.random() * 5) + 1,
     },
     {
         id: 2,
-        name: "Apple iPad Wi-Fi Tablet",
-        price: 249,
-        discount: 219,
-        image: "./images/MK2K3LLA_1_Supersize.jpg",
-        description: "Apple iPad 2021 10.2 Space Grey 64GB Wi-Fi Tablet - Global Spec",
+        name: "Trendy Queen Women's Oversized Summer T-Shirt",
+        price: 19.99,
+        discount: 14.99,
+        image: "./assets/fashion-mart2.jpeg",
+        description: "Business casual dressy top, ideal for beach vacations and spring fashion.",
         rating: Math.floor(Math.random() * 5) + 1,
     },
     {
         id: 3,
-        name: "Apple MacBook Air",
-        price: 649.97,
-        discount: 589.99,
-        image: "./images/A1MGN63BA_1_7781349_LargeProductImage.jpg",
-        description: "Apple MacBook Air 13.3 Inch M1 8GB RAM 256GB SSD - Space Grey",
+        name: "Dokotoo Women's Casual Crew Neck Sweatshirt",
+        price: 32.99,
+        discount: 27.09,
+        image: "./assets/fashion-mart3.jpeg",
+        description: "Loose soft long sleeve pullover top, suitable for casual wear.",
         rating: Math.floor(Math.random() * 5) + 1,
     },
     {
-        id: 1,
-        name: "Apple iPhone 16 Pro Max",
-        price: 1299.00,
-        discount: 1149.00,
-        image: "./images/MYX13QNA_1_Classic.png",
-        description: "Apple iPhone 16 Pro Max 512GB 5G SIM Free Smartphone - White Titanium",
+        id: 4,
+        name: "AUTOMET Women's Casual Basic T-Shirt",
+        price: 16.99,
+        discount: 14.99,
+        image: "./assets/fashion-mart4.jpeg",
+        description: "Loose fit crewneck short sleeve summer top, great for everyday wear.",
         rating: Math.floor(Math.random() * 5) + 1,
     },
     {
-        id: 2,
-        name: "Apple iPad Wi-Fi Tablet",
-        price: 249,
-        discount: 219,
-        image: "./images/MK2K3LLA_1_Supersize.jpg",
-        description: "Apple iPad 2021 10.2 Space Grey 64GB Wi-Fi Tablet - Global Spec",
+        id: 5,
+        name: "ANRABESS Women's Summer 2 Piece Outfit",
+        price: 46.99,
+        discount: 33.99,
+        image: "./assets/fashion-mart5.jpeg",
+        description: "Sleeveless crop top and capri wide leg pants jumpsuit, perfect for beach travel.",
         rating: Math.floor(Math.random() * 5) + 1,
     },
     {
-        id: 3,
-        name: "Apple MacBook Air",
-        price: 649.97,
-        discount: 589.99,
-        image: "./images/A1MGN63BA_1_7781349_LargeProductImage.jpg",
-        description: "Apple MacBook Air 13.3 Inch M1 8GB RAM 256GB SSD - Space Grey",
+        id: 6,
+        name: "Dokotoo Women's Oversized Denim Jacket",
+        price: 60.99,
+        discount: 46.96,
+        image: "./assets/fashion-mart6.jpg",
+        description: "Casual long boyfriend distressed jean jacket, suitable for autumn and spring.",
         rating: Math.floor(Math.random() * 5) + 1,
     },
     {
-        id: 3,
-        name: "Apple MacBook Air",
-        price: 649.97,
-        discount: 589.99,
-        image: "./images/A1MGN63BA_1_7781349_LargeProductImage.jpg",
-        description: "Apple MacBook Air 13.3 Inch M1 8GB RAM 256GB SSD - Space Grey",
-        rating: Math.floor(Math.random() * 5) + 1,
-    },
-    
-    {
-        id: 3,
-        name: "Apple MacBook Air",
-        price: 649.97,
-        discount: 589.99,
-        image: "./images/A1MGN63BA_1_7781349_LargeProductImage.jpg",
-        description: "Apple MacBook Air 13.3 Inch M1 8GB RAM 256GB SSD - Space Grey",
+        id: 7,
+        name: "AUTOMET Women's Zip Up Hoodie",
+        price: 52.99,
+        discount: 34.99,
+        image: "./assets/fashion-mart7.jpeg",
+        description: "Oversized sweatshirt with long sleeves, perfect for fall outfits.",
         rating: Math.floor(Math.random() * 5) + 1,
     },
     {
-        id: 3,
-        name: "Apple MacBook Air",
-        price: 649.97,
-        discount: 589.99,
-        image: "./images/A1MGN63BA_1_7781349_LargeProductImage.jpg",
-        description: "Apple MacBook Air 13.3 Inch M1 8GB RAM 256GB SSD - Space Grey",
+        id: 8,
+        name: "ANRABESS Women's Striped Oversized Sweatshirt",
+        price: 29.99,
+        discount: 26.99,
+        image: "./assets/fashion-mart8.jpeg",
+        description: "Long sleeve crew neck shirt, trendy preppy style for fall.",
+        rating: Math.floor(Math.random() * 5) + 1,
+    },
+    {
+        id: 9,
+        name: "AUTOMET Women's Leather Jacket",
+        price: 54.99,
+        discount: 49.99,
+        image: "./assets/fashion-mart9.jpeg",
+        description: "Faux suede fall fashion motorcycle coat, suitable for winter outfits.",
+        rating: Math.floor(Math.random() * 5) + 1,
+    },
+    {
+        id: 10,
+        name: "Dokotoo Women's Waffle Knit Shacket",
+        price: 39.99,
+        discount: 32.99,
+        image: "./assets/fashion-mart10.jpeg",
+        description: "Casual long sleeve button-down shirt, perfect for layering.",
+        rating: Math.floor(Math.random() * 5) + 1,
+    },
+    {
+        id: 11,
+        name: "YESNO Women's Bohemian Floral Maxi Dress",
+        price: 45.99,
+        discount: 39.99,
+        image: "./assets/fashion-mart11.jpeg",
+        description: "Loose casual summer dress with pockets, great for beach vacations.",
+        rating: Math.floor(Math.random() * 5) + 1,
+    },
+    {
+        id: 12,
+        name: "PRETTYGARDEN Women's Blazer",
+        price: 59.99,
+        discount: 49.99,
+        image: "./assets/fashion-mart12.jpeg",
+        description: "Casual one-button suit jacket, perfect for office and formal wear.",
         rating: Math.floor(Math.random() * 5) + 1,
     }
 ];
@@ -89,7 +115,7 @@ let cart = [];
 
 document.getElementById('search-input').addEventListener('input', function () {
     const query = this.value.toLowerCase();
-    const filteredProducts = bestProducts.filter(product => {
+    const filteredProducts = allProducts.filter(product => {
         return product.name.toLowerCase().includes(query) || product.description.toLowerCase().includes(query);
     });
 
@@ -98,8 +124,8 @@ document.getElementById('search-input').addEventListener('input', function () {
 });
 
 // Function to display the filtered products
-function displayFilteredProducts(products) {
-    const productContainer = document.getElementById("product-list");
+function displayFilteredProducts(products) { allProducts
+    const productContainer = document.getElementById("toy-list");
     productContainer.innerHTML = ""; // Clear existing products
 
     if (products.length === 0) {
@@ -143,7 +169,7 @@ function toggleCart() {
 
 // Add product to cart
 function addToCart(productId) {
-    const product = bestToys.find((p) => p.id === productId);
+    const product = allProducts.find((p) => p.id === productId);
     if (!product) return;
 
     const existingItem = cart.find((item) => item.id === productId);
@@ -243,13 +269,13 @@ function showToast(message) {
 }
 
 // Display toys on the page
-function displayToys() {
+function displayProducts() {
     const productContainer = document.getElementById("toy-list");
     productContainer.innerHTML = "";
 
     const initialCount = 8;
-    let visibleProducts = bestToys.slice(0, initialCount);
-    let hiddenProducts = bestToys.slice(initialCount);
+    let visibleProducts = allProducts.slice(0, initialCount);
+    let hiddenProducts = allProducts.slice(initialCount);
 
     function renderProducts(products) {
         products.forEach((product) => {
@@ -297,4 +323,4 @@ function checkout() {
 }
 
 // Display products on page load
-displayToys();
+displayProducts();

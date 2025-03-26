@@ -1,84 +1,93 @@
-const bestToys = [
+const allProducts = [
     {
         id: 1,
-        name: "Apple iPhone 16 Pro Max",
-        price: 1299.00,
-        discount: 1149.00,
-        image: "./images/MYX13QNA_1_Classic.png",
-        description: "Apple iPhone 16 Pro Max 512GB 5G SIM Free Smartphone - White Titanium",
+        name: "Dog Grooming Vacuum, Pet Vacuum Grooming Kit",
+        price:179,
+        discount:89,
+        image: "./assets/Grooming-product-1.jpg",
+        description: "AIRROBO Dog Grooming Vacuum, 12000Pa Strong Pet Grooming Vacuum for Dogs",
         rating: Math.floor(Math.random() * 5) + 1,
     },
     {
         id: 2,
-        name: "Apple iPad Wi-Fi Tablet",
+        name: "Swihauk Self Cleaning Slicker Brush",
+        price: 20,
+        discount: 16,
+        image: "./assets/Grooming-product2.jpg",
+        description: "Swihauk Self Cleaning Slicker Brush - Skin Friendly Deshedding Grooming Tool for Dogs & Cats",
+        rating: Math.floor(Math.random() * 5) + 1,
+    },
+    {
+        id: 3,
+        name: "Cat Hair Brush",
+        price: 16,
+        discount: 7,
+        image: "./assets/Grooming-product3.jpg",
+        description: "Cat Hair Brush,Cat Brush for Shedding,Soft Silicone Self Cleaning Brush for Short and Long Haired Cats",
+        rating: Math.floor(Math.random() * 5) + 1,
+    },
+    {
+        id: 4,
+        name: " Dog Grooming Wipes",
+        price: 27,
+        discount:26,
+        image: "./assets/Grooming-product4.jpg",
+        description: "Earth Rated Dog Grooming Wipes, Hypoallergenic, Cleaning and Hydrating, for Paws, Body and Butt",
+        rating: Math.floor(Math.random() * 5) + 1,
+    },
+    {
+        id: 5,
+        name: "Pet Grooming Gloves",
         price: 249,
         discount: 219,
-        image: "./images/MK2K3LLA_1_Supersize.jpg",
-        description: "Apple iPad 2021 10.2 Space Grey 64GB Wi-Fi Tablet - Global Spec",
+        image: "./assets/Grooming-product5.jpg",
+        description: "Pet Grooming Gloves - Gentle Dog Bathing Shampoo Brush - Massage Mitt with Enhanced Five Finger Design",
         rating: Math.floor(Math.random() * 5) + 1,
     },
     {
-        id: 3,
-        name: "Apple MacBook Air",
+        id: 6,
+        name: "EQyss Avocado Mist Pet Spray Conditioner",
         price: 649.97,
         discount: 589.99,
-        image: "./images/A1MGN63BA_1_7781349_LargeProductImage.jpg",
-        description: "Apple MacBook Air 13.3 Inch M1 8GB RAM 256GB SSD - Space Grey",
+        image: "./assets/Grooming-product6.jpg",
+        description: "EQyss Avocado Mist Pet Spray Conditioner - Shines, Conditions, and Reduces Shedding- for Dogs, Cats, Puppies",
         rating: Math.floor(Math.random() * 5) + 1,
     },
     {
-        id: 1,
-        name: "Apple iPhone 16 Pro Max",
-        price: 1299.00,
-        discount: 1149.00,
-        image: "./images/MYX13QNA_1_Classic.png",
-        description: "Apple iPhone 16 Pro Max 512GB 5G SIM Free Smartphone - White Titanium",
-        rating: Math.floor(Math.random() * 5) + 1,
-    },
-    {
-        id: 2,
-        name: "Apple iPad Wi-Fi Tablet",
-        price: 249,
-        discount: 219,
-        image: "./images/MK2K3LLA_1_Supersize.jpg",
-        description: "Apple iPad 2021 10.2 Space Grey 64GB Wi-Fi Tablet - Global Spec",
-        rating: Math.floor(Math.random() * 5) + 1,
-    },
-    {
-        id: 3,
-        name: "Apple MacBook Air",
-        price: 649.97,
-        discount: 589.99,
-        image: "./images/A1MGN63BA_1_7781349_LargeProductImage.jpg",
-        description: "Apple MacBook Air 13.3 Inch M1 8GB RAM 256GB SSD - Space Grey",
-        rating: Math.floor(Math.random() * 5) + 1,
-    },
-    {
-        id: 3,
-        name: "Apple MacBook Air",
-        price: 649.97,
-        discount: 589.99,
-        image: "./images/A1MGN63BA_1_7781349_LargeProductImage.jpg",
-        description: "Apple MacBook Air 13.3 Inch M1 8GB RAM 256GB SSD - Space Grey",
+        id: 7,
+        name: "Car Cleaning Gun Detailing Interior Dryer Air Blow Gun",
+        price: 49,
+        discount: 39,
+        image: "./assets/Grooming-product7.jpg",
+        description: "Car Cleaning Gun Detailing Interior Dryer Air Blow Gun, High Pressure Blower Gun, Car Detailing Kit Interior Cleaner",
         rating: Math.floor(Math.random() * 5) + 1,
     },
     
     {
-        id: 3,
-        name: "Apple MacBook Air",
-        price: 649.97,
-        discount: 589.99,
-        image: "./images/A1MGN63BA_1_7781349_LargeProductImage.jpg",
-        description: "Apple MacBook Air 13.3 Inch M1 8GB RAM 256GB SSD - Space Grey",
+        id: 8,
+        name: "Compressed Air Duster",
+        price: 49,
+        discount: 33,
+        image: "./assets/Grooming-product8.jpg",
+        description: "Compressed Air Duster,180000RPM Jet Dryer Blower,3 Gear Electric 5000 mAh Portable Air Duster",
         rating: Math.floor(Math.random() * 5) + 1,
     },
     {
-        id: 3,
-        name: "Apple MacBook Air",
-        price: 649.97,
-        discount: 589.99,
-        image: "./images/A1MGN63BA_1_7781349_LargeProductImage.jpg",
-        description: "Apple MacBook Air 13.3 Inch M1 8GB RAM 256GB SSD - Space Grey",
+        id: 9,
+        name: "German Beard & Mustache Scissors",
+        price: 15,
+        discount: 12,
+        image: "./assets/Grooming-product9.jpg",
+        description: "Ontaki 5 Professional German Beard & Mustache Scissors with 2 Comb & Carrying Pouch for Men - Bevel Edge for Precision",
+        rating: Math.floor(Math.random() * 5) + 1,
+    },
+    {
+        id: 10,
+        name: "The Liquid8r",
+        price: 28,
+        discount: 19,
+        image: "./assets/Grooming-product10.jpg",
+        description: "The Rag Company - The Liquid8r - Absorbent 70/30 Blend Microfiber Drying Towel for Cars, Trucks, SUVs, Safe for Detailing",
         rating: Math.floor(Math.random() * 5) + 1,
     }
 ];
@@ -89,7 +98,7 @@ let cart = [];
 
 document.getElementById('search-input').addEventListener('input', function () {
     const query = this.value.toLowerCase();
-    const filteredProducts = bestProducts.filter(product => {
+    const filteredProducts = allProducts.filter(product => {
         return product.name.toLowerCase().includes(query) || product.description.toLowerCase().includes(query);
     });
 
@@ -98,8 +107,8 @@ document.getElementById('search-input').addEventListener('input', function () {
 });
 
 // Function to display the filtered products
-function displayFilteredProducts(products) {
-    const productContainer = document.getElementById("product-list");
+function displayFilteredProducts(products) { allProducts
+    const productContainer = document.getElementById("toy-list");
     productContainer.innerHTML = ""; // Clear existing products
 
     if (products.length === 0) {
@@ -143,7 +152,7 @@ function toggleCart() {
 
 // Add product to cart
 function addToCart(productId) {
-    const product = bestToys.find((p) => p.id === productId);
+    const product = allProducts.find((p) => p.id === productId);
     if (!product) return;
 
     const existingItem = cart.find((item) => item.id === productId);
@@ -243,13 +252,13 @@ function showToast(message) {
 }
 
 // Display toys on the page
-function displayToys() {
+function displayProducts() {
     const productContainer = document.getElementById("toy-list");
     productContainer.innerHTML = "";
 
     const initialCount = 8;
-    let visibleProducts = bestToys.slice(0, initialCount);
-    let hiddenProducts = bestToys.slice(initialCount);
+    let visibleProducts = allProducts.slice(0, initialCount);
+    let hiddenProducts = allProducts.slice(initialCount);
 
     function renderProducts(products) {
         products.forEach((product) => {
@@ -297,4 +306,4 @@ function checkout() {
 }
 
 // Display products on page load
-displayToys();
+displayProducts();

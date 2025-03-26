@@ -11,15 +11,22 @@
             padding: 0;
             background-color: #EAEDED;
         }
+        .return-container{
+          position: relative;
+        }
         
         .container {
-            max-width: 800px;
-            margin: 40px auto;
-            background: white;
-            padding: 25px;
-            border-radius: 8px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-        }
+        max-width: 800px;
+        background: white;
+        padding: 25px;
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        position: absolute;
+        left: 25%;
+        top: 130px;
+    
+}
+
         .return-policy img {
             width: 60%;
             height: auto;
@@ -124,6 +131,7 @@
 </div>
 
     
+   <div class="return-container">
     <div class="container">
         <section class="return-policy">
             <img src="/assets/box1-1.jpg" alt="Free International Returns">
@@ -148,10 +156,9 @@
             <button class="btn" id="return-btn">Start Return Process</button>
         </section>
     </div>
+   </div>
     
-    <footer>
-        <p>&copy; 2025 Amazon. All rights reserved.</p>
-    </footer>
+    
     
     <script>
         document.getElementById("return-btn").addEventListener("click", function() {

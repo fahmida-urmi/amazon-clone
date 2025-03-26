@@ -17,7 +17,7 @@ const bestProducts = [
         name: "Apple iPad Wi-Fi Tablet",
         price: 249,
         discount: 219, // 12% discount
-        image: "./images/MK2K3LLA_1_Supersize.jpg",
+        image: "./assets/earbuds.webp",
         description: "Apple iPad 2021 10.2 Space Grey 64GB Wi-Fi Tablet - Global Spec",
         rating: Math.floor(Math.random() * 5) + 1,
     },

@@ -1,7 +1,5 @@
 //best products 
-// Best Products with Discount and Ratings
-//best products 
-// Best Products with Discount and Ratings
+
 const bestProducts = [
     {
         id: 1,
@@ -14,11 +12,11 @@ const bestProducts = [
     },
     {
         id: 2,
-        name: "Apple iPad Wi-Fi Tablet",
-        price: 249,
-        discount: 219, // 12% discount
-        image: "./images/MK2K3LLA_1_Supersize.jpg",
-        description: "Apple iPad 2021 10.2 Space Grey 64GB Wi-Fi Tablet - Global Spec",
+        name: "Wireless earbuds",
+        price: 49,
+        discount: 39, 
+        image: "./assets/earbuds.webp",
+        description: "Wireless Earbuds Bluetooth Headphones, Ear Buds with Deep Bass, 40H Long Playtime, Power Display, IPX7 Waterproof in Ear Earphone",
         rating: Math.floor(Math.random() * 5) + 1,
     },
     {
@@ -32,20 +30,48 @@ const bestProducts = [
     },
     {
         id: 4,
-        name: "Microsoft Surface 7 Snapdragon",
-        price: 1999.00,
-        discount: 1749.00, // 12.5% discount
-        image: "./images/ZIR-00003_1_Supersize.png",
-        description: "Microsoft Surface 7 Snapdragon X Elite 16GB RAM 1TB SSD 13.8 Inch Touchscreen Windows 11 Pro Laptop",
+        name: "Smart Watch",
+        price: 1.599,
+        discount: 1.399, // 12.5% discount
+        image: "./assets/smartwatch-black.jpg",
+        description: "Smart DND, 100 Sports Modes, Smartwatch for Men and Women (Jet Black)",
         rating: Math.floor(Math.random() * 5) + 1,
     },
     {
         id: 5,
         name: "Fujitsu LIFEBOOK A3511",
-        price: 388.93,
-        discount: 349.99, // 10% discount
-        image: "./images/61yWngjvgWL._AC_UL480_QL65_.jpg",
-        description: "Fujitsu LIFEBOOK A3511 Intel Core i3-1115G4 15.6 FHD Display 8GB DDR4-SDRAM 256GB SSD Wi-Fi 6 (802.11ax) Windows 11 Pro",
+        price:35.99,
+        discount: 25.93, // 10% discount
+        image: "./assets/product_img.jpg",
+        description: " BENGOO G9000 Stereo Gaming Headset for PS4, PC, Xbox One Controller, Noise Cancelling Over Ear Headphones with Mic, LED Light, Bass Surround, Soft Memory Eaemuffs (Blue)",
+        rating: Math.floor(Math.random() * 5) + 1,
+    },
+    {
+        id: 6,
+        name: "Fujitsu LIFEBOOK A3511",
+        price: 66,
+        discount: -20, // 10% discount
+        image: "./assets/Mechanical Keyboard.webp",
+        description: "AULA F75 Pro Wireless Mechanical Keyboard,75% Gasket Hot Swappable Custom Keyboard,RGB Backlit,Pre-lubed Reaper Switches,Side Printed PBT Keycaps,2.4GHz/USB-C/BT5.0 Mechanical Gaming Keyboards",
+        rating: Math.floor(Math.random() * 5) + 1,
+    },
+    
+    {
+        id: 7,
+        name: "Fujitsu LIFEBOOK A3511",
+        price:41.99,
+        discount: 29.93, // 10% discount
+        image: "./assets/bluetoth.webp",
+        description: " Ortizan Portable Bluetooth Speaker: IPX7 Waterproof, 24W Loud Sound, Deep Bass, Bluetooth 5.3, LED Lights, Wireless Stereo Pairing, 30H Playtime",
+        rating: Math.floor(Math.random() * 5) + 1,
+    },
+    {
+        id: 8,
+        name: "Fujitsu LIFEBOOK A3511",
+        price: 44,
+        discount: 10, // 10% discount
+        image: "./assets/71LWUzbAs5L._AC_UL320_.jpg",
+        description: "Revlon Liquid Foundation, ColorStay Face Makeup for Combination & Oily Skin, SPF 15, Medium-Full Coverage with Matte Finish, 370 Toast, 1 Fl Oz",
         rating: Math.floor(Math.random() * 5) + 1,
     },
 ];
@@ -259,7 +285,7 @@ function displayProducts() {
     
 }
 
-displayProducts();
+
 // Update Cart Summary
 function updateCartSummary(total) {
     document.getElementById("cart-subtotal").innerText = `$${total.toFixed(2)}`;

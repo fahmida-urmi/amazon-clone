@@ -1,86 +1,70 @@
-const bestToys = [
-    {
-        id: 1,
-        name: "Apple iPhone 16 Pro Max",
-        price: 1299.00,
-        discount: 1149.00,
-        image: "./images/MYX13QNA_1_Classic.png",
-        description: "Apple iPhone 16 Pro Max 512GB 5G SIM Free Smartphone - White Titanium",
-        rating: Math.floor(Math.random() * 5) + 1,
-    },
-    {
-        id: 2,
-        name: "Apple iPad Wi-Fi Tablet",
-        price: 249,
-        discount: 219,
-        image: "./images/MK2K3LLA_1_Supersize.jpg",
-        description: "Apple iPad 2021 10.2 Space Grey 64GB Wi-Fi Tablet - Global Spec",
-        rating: Math.floor(Math.random() * 5) + 1,
-    },
-    {
-        id: 3,
-        name: "Apple MacBook Air",
-        price: 649.97,
-        discount: 589.99,
-        image: "./images/A1MGN63BA_1_7781349_LargeProductImage.jpg",
-        description: "Apple MacBook Air 13.3 Inch M1 8GB RAM 256GB SSD - Space Grey",
-        rating: Math.floor(Math.random() * 5) + 1,
-    },
-    {
-        id: 1,
-        name: "Apple iPhone 16 Pro Max",
-        price: 1299.00,
-        discount: 1149.00,
-        image: "./images/MYX13QNA_1_Classic.png",
-        description: "Apple iPhone 16 Pro Max 512GB 5G SIM Free Smartphone - White Titanium",
-        rating: Math.floor(Math.random() * 5) + 1,
-    },
-    {
-        id: 2,
-        name: "Apple iPad Wi-Fi Tablet",
-        price: 249,
-        discount: 219,
-        image: "./images/MK2K3LLA_1_Supersize.jpg",
-        description: "Apple iPad 2021 10.2 Space Grey 64GB Wi-Fi Tablet - Global Spec",
-        rating: Math.floor(Math.random() * 5) + 1,
-    },
-    {
-        id: 3,
-        name: "Apple MacBook Air",
-        price: 649.97,
-        discount: 589.99,
-        image: "./images/A1MGN63BA_1_7781349_LargeProductImage.jpg",
-        description: "Apple MacBook Air 13.3 Inch M1 8GB RAM 256GB SSD - Space Grey",
-        rating: Math.floor(Math.random() * 5) + 1,
-    },
-    {
-        id: 3,
-        name: "Apple MacBook Air",
-        price: 649.97,
-        discount: 589.99,
-        image: "./images/A1MGN63BA_1_7781349_LargeProductImage.jpg",
-        description: "Apple MacBook Air 13.3 Inch M1 8GB RAM 256GB SSD - Space Grey",
-        rating: Math.floor(Math.random() * 5) + 1,
-    },
+const allProducts = [
+  
+        {
+            "id": 1,
+            "name": "Ergonomic Mesh Office Chair",
+            "price": 179.99,
+            "discount": 139.99,
+            "image": "./assets/office-chair1.jpg",
+            "description": "Breathable mesh back office chair with lumbar support and adjustable armrests.",
+            "rating": Math.floor(Math.random() * 5) + 1
+        },
+        {
+            "id": 2,
+            "name": "Leather Executive Office Chair",
+            "price": 249.99,
+            "discount": 199.99,
+            "image": "./assets/office-chair2.jpg",
+            "description": "High-back leather office chair with padded armrests and reclining function.",
+            "rating": Math.floor(Math.random() * 5) + 1
+        },
+        {
+            "id": 3,
+            "name": "Gaming Office Chair with Footrest",
+            "price": 229.99,
+            "discount": 179.99,
+            "image": "./assets/office-chair3.jpg",
+            "description": "Comfortable gaming-style office chair with adjustable height, footrest, and headrest.",
+            "rating": Math.floor(Math.random() * 5) + 1
+        },
+        {
+            "id": 4,
+            "name": "High-Back Mesh Office Chair",
+            "price": 159.99,
+            "discount": 129.99,
+            "image": "./assets/office-chair4.jpg",
+            "description": "Tall ergonomic office chair with breathable mesh, lumbar support, and tilt function.",
+            "rating": Math.floor(Math.random() * 5) + 1
+        },
+        {
+            "id": 5,
+            "name": "Mid-Back Swivel Task Chair",
+            "price": 129.99,
+            "discount": 99.99,
+            "image": "./assets/office-chair5.jpg",
+            "description": "Compact and stylish office chair with soft padding, swivel base, and adjustable height.",
+            "rating": Math.floor(Math.random() * 5) + 1
+        },
+        {
+            "id": 6,
+            "name": "Reclining Office Chair with Massage",
+            "price": 299.99,
+            "discount": 249.99,
+            "image": "./assets/office-chair6.jpg",
+            "description": "Luxurious reclining office chair with built-in massager, footrest, and thick cushions.",
+            "rating": Math.floor(Math.random() * 5) + 1
+        },
+        {
+            "id": 7,
+            "name": "Adjustable Standing Desk Chair",
+            "price": 189.99,
+            "discount": 149.99,
+            "image": "./assets/office-chair7.jpg",
+            "description": "Ergonomic standing desk chair with adjustable height, back support, and 360-degree swivel.",
+            "rating": Math.floor(Math.random() * 5) + 1
+        }
+
     
-    {
-        id: 3,
-        name: "Apple MacBook Air",
-        price: 649.97,
-        discount: 589.99,
-        image: "./images/A1MGN63BA_1_7781349_LargeProductImage.jpg",
-        description: "Apple MacBook Air 13.3 Inch M1 8GB RAM 256GB SSD - Space Grey",
-        rating: Math.floor(Math.random() * 5) + 1,
-    },
-    {
-        id: 3,
-        name: "Apple MacBook Air",
-        price: 649.97,
-        discount: 589.99,
-        image: "./images/A1MGN63BA_1_7781349_LargeProductImage.jpg",
-        description: "Apple MacBook Air 13.3 Inch M1 8GB RAM 256GB SSD - Space Grey",
-        rating: Math.floor(Math.random() * 5) + 1,
-    }
 ];
 
 let cart = [];
@@ -89,7 +73,7 @@ let cart = [];
 
 document.getElementById('search-input').addEventListener('input', function () {
     const query = this.value.toLowerCase();
-    const filteredProducts = bestProducts.filter(product => {
+    const filteredProducts = allProducts.filter(product => {
         return product.name.toLowerCase().includes(query) || product.description.toLowerCase().includes(query);
     });
 
@@ -98,8 +82,8 @@ document.getElementById('search-input').addEventListener('input', function () {
 });
 
 // Function to display the filtered products
-function displayFilteredProducts(products) {
-    const productContainer = document.getElementById("product-list");
+function displayFilteredProducts(products) { allProducts
+    const productContainer = document.getElementById("toy-list");
     productContainer.innerHTML = ""; // Clear existing products
 
     if (products.length === 0) {
@@ -143,7 +127,7 @@ function toggleCart() {
 
 // Add product to cart
 function addToCart(productId) {
-    const product = bestToys.find((p) => p.id === productId);
+    const product = allProducts.find((p) => p.id === productId);
     if (!product) return;
 
     const existingItem = cart.find((item) => item.id === productId);
@@ -243,13 +227,13 @@ function showToast(message) {
 }
 
 // Display toys on the page
-function displayToys() {
+function displayProducts() {
     const productContainer = document.getElementById("toy-list");
     productContainer.innerHTML = "";
 
     const initialCount = 8;
-    let visibleProducts = bestToys.slice(0, initialCount);
-    let hiddenProducts = bestToys.slice(initialCount);
+    let visibleProducts = allProducts.slice(0, initialCount);
+    let hiddenProducts = allProducts.slice(initialCount);
 
     function renderProducts(products) {
         products.forEach((product) => {
@@ -297,4 +281,4 @@ function checkout() {
 }
 
 // Display products on page load
-displayToys();
+displayProducts();
