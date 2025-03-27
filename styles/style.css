@@ -647,6 +647,51 @@ footer{
 
 
 
+.original-price {
+    color: #999;
+    font-size: 14px;
+}
+
+.discount-price {
+    color: #B12704;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Star Ratings using Font Awesome */
+.review-stars {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.review-stars i {
+    color: gold; /* Gold stars */
+}
+
+/* Button Style */
+.product button {
+    background: #f0c14b;
+    border: 1px solid #a88734;
+    color: #111;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.product button:hover {
+    background: #ddb347;
+}
+
+.pPrice{
+    display: flex;
+    justify-content: space-between;
+}
+
+.pPrice p{
+    padding: 4px;
+}
+
 @media screen and (max-width: 900px) {
     nav {
         flex-wrap: wrap;
@@ -656,6 +701,8 @@ footer{
         order: 7;
         margin: 15px 0 5px;
         min-width: 300px;
+        margin-top: 10px;
+        width: 100%;
     }
 
     .box-col{
@@ -731,59 +778,38 @@ footer{
     font-size: 14px;
    }
 
-
+   .nav-bottom {
+    display: none;
 }
 
-
-
-
-
-
-
-
-
-
-.original-price {
-    color: #999;
-    font-size: 14px;
-}
-
-.discount-price {
-    color: #B12704;
-    font-size: 18px;
-    font-weight: bold;
-}
-
-/* Star Ratings using Font Awesome */
-.review-stars {
-    font-size: 16px;
-    margin: 5px 0;
-}
-
-.review-stars i {
-    color: gold; /* Gold stars */
-}
-
-/* Button Style */
-.product button {
-    background: #f0c14b;
-    border: 1px solid #a88734;
-    color: #111;
-    padding: 8px 12px;
-    border-radius: 4px;
+.hamburger {
+    display: block; /* Show the hamburger icon */
     cursor: pointer;
-    transition: 0.3s;
+    margin-left: 15px;
+}
+.nav-search {
+    order: 7;
+    margin: 15px 0 5px;
+    min-width: 300px;
+    margin-top: 10px;
+    width: 100%;
 }
 
-.product button:hover {
-    background: #ddb347;
+.cart-container{
+    margin-left: 10px;
 }
 
-.pPrice{
-    display: flex;
-    justify-content: space-between;
 }
 
-.pPrice p{
-    padding: 4px;
+
+
+
+
+
+
+/* Ensure the hamburger is hidden on larger screens */
+@media (min-width: 601px) {
+    .hamburger {
+        display: none;
+    }
 }

@@ -12,7 +12,6 @@ body {
 font-size: 12px;
 font-weight: 800;
 position: absolute;
-
 right: -18%;
 top: 40%;
 
@@ -34,7 +33,7 @@ top: 40%;
   margin-bottom: 20px;
 }
 
-.product button {
+/* .product button {
   background-color: #ff9900;
   color: white;
   padding: 8px 12px;
@@ -46,7 +45,7 @@ top: 40%;
 
 .product button:hover{
   background-color: #d88508;
-}
+} */
   
 
 .product {

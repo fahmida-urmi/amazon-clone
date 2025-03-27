@@ -95,5 +95,15 @@ function validateForm() {
     return true;
 }
 
+function toggleNav() {
+    const navBottom = document.getElementById("nav-bottom");
+
+    // Toggle the display of the navigation menu
+    if (navBottom.style.display === "block") {
+        navBottom.style.display = "none";
+    } else {
+        navBottom.style.display = "block";
+    }
+}
 
 
