@@ -692,6 +692,8 @@ footer{
     padding: 4px;
 }
 
+
+
 @media screen and (max-width: 900px) {
     nav {
         flex-wrap: wrap;

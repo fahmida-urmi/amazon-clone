@@ -74,6 +74,15 @@ const bestProducts = [
         description: "Revlon Liquid Foundation, ColorStay Face Makeup for Combination & Oily Skin, SPF 15, Medium-Full Coverage with Matte Finish, 370 Toast, 1 Fl Oz",
         rating: Math.floor(Math.random() * 5) + 1,
     },
+    {
+        "id": 9,
+        "name": "Reclining Office Chair with Massage",
+        "price": 299.99,
+        "discount": 249.99,
+        "image": "./assets/office-chair6.jpg",
+        "description": "Luxurious reclining office chair with built-in massager, footrest, and thick cushions.",
+        "rating": Math.floor(Math.random() * 5) + 1
+    }
 ];
 
 let cart = [];
@@ -302,47 +311,3 @@ displayProducts();
 
 
 
-
-
-
-
-// 
-// Toys Under $25
-// const toysUnder25 = [
-//     {
-//         id: 101,
-//         name: "LEGO Classic Bricks Set",
-//         price: 19.99,
-//         discount: 15.99, // 20% discount
-//         image: "./images/ZIR-00003_1_Supersize.png",
-//         description: "LEGO Classic Creative Bricks Set - 221 Pieces",
-//         rating: Math.floor(Math.random() * 5) + 1,
-//     },
-//     {
-//         id: 102,
-//         name: "Hot Wheels Car Pack",
-//         price: 24.99,
-//         discount: 19.99, // 20% discount
-//         image: "./images/hotwheels.jpg",
-//         description: "Hot Wheels 5-Car Gift Pack - Assorted Models",
-//         rating: Math.floor(Math.random() * 5) + 1,
-//     },
-//     {
-//         id: 103,
-//         name: "Plush Teddy Bear",
-//         price: 14.99,
-//         discount: 12.49, // 17% discount
-//         image: "./images/teddy.jpg",
-//         description: "Soft and Cuddly Plush Teddy Bear - 12 Inches",
-//         rating: Math.floor(Math.random() * 5) + 1,
-//     },
-//     {
-//         id: 104,
-//         name: "Coloring Book for Kids",
-//         price: 9.99,
-//         discount: 7.99, // 20% discount
-//         image: "./images/coloringbook.jpg",
-//         description: "Fun & Educational Coloring Book with 100+ Pages",
-//         rating: Math.floor(Math.random() * 5) + 1,
-//     },
-// ];
