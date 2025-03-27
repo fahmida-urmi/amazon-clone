@@ -22,7 +22,7 @@ const bestProducts = [
   
    
     {
-        id: 5,
+        id: 3,
         name: "Apple MacBook Air",
         price: 649.97,
         discount: 589.99, // 10% discount
@@ -31,7 +31,7 @@ const bestProducts = [
         rating: Math.floor(Math.random() * 5) + 1,
     },
     {
-        id: 6,
+        id: 4,
         name: "Microsoft Surface 7 Snapdragon",
         price: 1999.00,
         discount: 1749.00, // 12.5% discount
@@ -42,7 +42,7 @@ const bestProducts = [
    
     
     {
-        id: 4,
+        id: 5,
         name: "Smart Watch",
         price: 1.599,
         discount: 1.399, // 12.5% discount
@@ -51,7 +51,7 @@ const bestProducts = [
         rating: Math.floor(Math.random() * 5) + 1,
     },
     {
-        id: 5,
+        id: 6,
         name: "Fujitsu LIFEBOOK A3511",
         price:35.99,
         discount: 25.93, // 10% discount
@@ -60,7 +60,7 @@ const bestProducts = [
         rating: Math.floor(Math.random() * 5) + 1,
     },
     {
-        id: 6,
+        id: 7,
         name: "Fujitsu LIFEBOOK A3511",
         price: 66,
         discount: -20, // 10% discount
@@ -70,7 +70,7 @@ const bestProducts = [
     },
     
     {
-        id: 7,
+        id: 8,
         name: "Fujitsu LIFEBOOK A3511",
         price:41.99,
         discount: 29.93, // 10% discount
@@ -79,7 +79,7 @@ const bestProducts = [
         rating: Math.floor(Math.random() * 5) + 1,
     },
     {
-        id: 8,
+        id: 9,
         name: "Fujitsu LIFEBOOK A3511",
         price: 44,
         discount: 10, // 10% discount
@@ -89,7 +89,7 @@ const bestProducts = [
     },
     
     {
-        "id": 7,
+        "id": 10,
         "name": "Apple 2024 MacBook Air 13-inch Laptop",
         "price": 949.00,
         "discount": 100.00,
@@ -98,7 +98,7 @@ const bestProducts = [
         "rating": 5
     },
     {
-        "id": 8,
+        "id": 11,
         "name": "HP 14 Laptop",
         "price": 177.35,
         "discount": 52.64,
@@ -107,7 +107,7 @@ const bestProducts = [
         "rating": 4
     },
     {
-        "id": 9,
+        "id": 12,
         "name": "Acer Aspire 3 A315-24P-R7VH Slim Laptop",
         "price": 299.99,
         "discount": 21.00,
@@ -116,7 +116,7 @@ const bestProducts = [
         "rating": 4
     },
     {
-        "id": 10,
+        "id": 13,
         "name": "Lenovo 100E Chromebook 2nd Gen",
         "price": 40.00,
         "discount": 10.00,
@@ -125,7 +125,7 @@ const bestProducts = [
         "rating": 3
     },
     {
-        "id": 11,
+        "id": 14,
         "name": "ASUS ROG Strix G16 Gaming Laptop",
         "price": 1038.14,
         "discount": 161.85,
@@ -134,7 +134,7 @@ const bestProducts = [
         "rating": 5
     },
     {
-        "id": 12,
+        "id": 15,
         "name": "HP Pavilion 15.6\" HD Touchscreen Laptop",
         "price": 309.99,
         "discount": 90.00,
@@ -143,7 +143,7 @@ const bestProducts = [
         "rating": 4
     },
     {
-        "id": 13,
+        "id": 16,
         "name": "Apple 2024 MacBook Pro 14-inch Laptop",
         "price": 1273.09,
         "discount": 226.91,
@@ -152,7 +152,7 @@ const bestProducts = [
         "rating": 5
     },
     {
-        "id": 14,
+        "id": 17,
         "name": "Apple 2022 MacBook Air Laptop with M2 chip",
         "price": 718.09,
         "discount": 80.91,
@@ -161,7 +161,7 @@ const bestProducts = [
         "rating": 5
     },
     {
-        "id": 15,
+        "id": 18,
         "name": "HP 15.6\" Business Laptop",
         "price": 412.79,
         "discount": 87.20,
@@ -170,7 +170,7 @@ const bestProducts = [
         "rating": 4
     },
     {
-        "id": 16,
+        "id": 19,
         "name": "Apple MacBook Air 2020 13.3-inch",
         "price": 429.00,
         "discount": 70.00,
@@ -182,33 +182,6 @@ const bestProducts = [
 
 
     {
-        id: 17,
-        name: "Fujitsu LIFEBOOK A3511",
-        price: 388.93,
-        discount: 349.99, // 10% discount
-        image: "./images/61yWngjvgWL._AC_UL480_QL65_.jpg",
-        description: "Fujitsu LIFEBOOK A3511 Intel Core i3-1115G4 15.6 FHD Display 8GB DDR4-SDRAM 256GB SSD Wi-Fi 6 (802.11ax) Windows 11 Pro",
-        rating: Math.floor(Math.random() * 5) + 1,
-    },
-    {
-        id: 18,
-        name: "Apple MacBook Air",
-        price: 649.97,
-        discount: 589.99, // 10% discount
-        image: "./images/A1MGN63BA_1_7781349_LargeProductImage.jpg",
-        description: "Apple MacBook Air 13.3 Inch M1 8GB RAM 256GB SSD - Space Grey",
-        rating: Math.floor(Math.random() * 5) + 1,
-    },
-    {
-        id: 19,
-        name: "Microsoft Surface 7 Snapdragon",
-        price: 1999.00,
-        discount: 1749.00, // 12.5% discount
-        image: "./images/ZIR-00003_1_Supersize.png",
-        description: "Microsoft Surface 7 Snapdragon X Elite 16GB RAM 1TB SSD 13.8 Inch Touchscreen Windows 11 Pro Laptop",
-        rating: Math.floor(Math.random() * 5) + 1,
-    },
-    {
         id: 20,
         name: "Fujitsu LIFEBOOK A3511",
         price: 388.93,
@@ -218,7 +191,34 @@ const bestProducts = [
         rating: Math.floor(Math.random() * 5) + 1,
     },
     {
-        "id": 21,
+        id: 21,
+        name: "Apple MacBook Air",
+        price: 649.97,
+        discount: 589.99, // 10% discount
+        image: "./images/A1MGN63BA_1_7781349_LargeProductImage.jpg",
+        description: "Apple MacBook Air 13.3 Inch M1 8GB RAM 256GB SSD - Space Grey",
+        rating: Math.floor(Math.random() * 5) + 1,
+    },
+    {
+        id: 22,
+        name: "Microsoft Surface 7 Snapdragon",
+        price: 1999.00,
+        discount: 1749.00, // 12.5% discount
+        image: "./images/ZIR-00003_1_Supersize.png",
+        description: "Microsoft Surface 7 Snapdragon X Elite 16GB RAM 1TB SSD 13.8 Inch Touchscreen Windows 11 Pro Laptop",
+        rating: Math.floor(Math.random() * 5) + 1,
+    },
+    {
+        id: 23,
+        name: "Fujitsu LIFEBOOK A3511",
+        price: 388.93,
+        discount: 349.99, // 10% discount
+        image: "./images/61yWngjvgWL._AC_UL480_QL65_.jpg",
+        description: "Fujitsu LIFEBOOK A3511 Intel Core i3-1115G4 15.6 FHD Display 8GB DDR4-SDRAM 256GB SSD Wi-Fi 6 (802.11ax) Windows 11 Pro",
+        rating: Math.floor(Math.random() * 5) + 1,
+    },
+    {
+        "id": 24,
         "name": "Dell 27-inch 4K UHD Monitor",
         "price": 349.99,
         "discount": 299.99,
@@ -227,7 +227,7 @@ const bestProducts = [
         "rating": Math.floor(Math.random() * 5) + 1
     },
     {
-        "id": 22,
+        "id": 25,
         "name": "LG 32-inch QHD Gaming Monitor",
         "price": 399.99,
         "discount": 349.99,
@@ -236,7 +236,7 @@ const bestProducts = [
         "rating": Math.floor(Math.random() * 5) + 1
     },
     {
-        "id": 23,
+        "id": 26,
         "name": "ASUS 24-inch Full HD Monitor",
         "price": 199.99,
         "discount": 149.99,
@@ -245,7 +245,7 @@ const bestProducts = [
         "rating": Math.floor(Math.random() * 5) + 1
     },
     {
-        "id": 24,
+        "id": 27,
         "name": "Samsung 34-inch UltraWide Curved Monitor",
         "price": 549.99,
         "discount": 479.99,
@@ -254,7 +254,7 @@ const bestProducts = [
         "rating": Math.floor(Math.random() * 5) + 1
     },
     {
-        "id": 25,
+        "id": 28,
         "name": "BenQ 27-inch 2K Designer Monitor",
         "price": 369.99,
         "discount": 319.99,
@@ -263,7 +263,7 @@ const bestProducts = [
         "rating": Math.floor(Math.random() * 5) + 1
     },
     {
-        "id": 26,
+        "id": 29,
         "name": "Acer Nitro 27-inch Gaming Monitor",
         "price": 329.99,
         "discount": 279.99,
@@ -272,7 +272,7 @@ const bestProducts = [
         "rating": Math.floor(Math.random() * 5) + 1
     },
     {
-        "id": 27,
+        "id": 30,
         "name": "HP 24-inch Full HD Business Monitor",
         "price": 179.99,
         "discount": 139.99,
@@ -282,7 +282,7 @@ const bestProducts = [
     },
     
     {
-        "id": 1,
+        "id": 31,
         "name": "Ergonomic Mesh Office Chair",
         "price": 179.99,
         "discount": 139.99,
@@ -291,7 +291,7 @@ const bestProducts = [
         "rating": Math.floor(Math.random() * 5) + 1
     },
     {
-        "id": 2,
+        "id": 32,
         "name": "Leather Executive Office Chair",
         "price": 249.99,
         "discount": 199.99,
@@ -300,7 +300,7 @@ const bestProducts = [
         "rating": Math.floor(Math.random() * 5) + 1
     },
     {
-        "id": 3,
+        "id": 33,
         "name": "Gaming Office Chair with Footrest",
         "price": 229.99,
         "discount": 179.99,
@@ -309,7 +309,7 @@ const bestProducts = [
         "rating": Math.floor(Math.random() * 5) + 1
     },
     {
-        "id": 4,
+        "id": 34,
         "name": "High-Back Mesh Office Chair",
         "price": 159.99,
         "discount": 129.99,
@@ -318,7 +318,7 @@ const bestProducts = [
         "rating": Math.floor(Math.random() * 5) + 1
     },
     {
-        "id": 5,
+        "id": 35,
         "name": "Mid-Back Swivel Task Chair",
         "price": 129.99,
         "discount": 99.99,
@@ -327,7 +327,7 @@ const bestProducts = [
         "rating": Math.floor(Math.random() * 5) + 1
     },
     {
-        "id": 6,
+        "id": 36,
         "name": "Reclining Office Chair with Massage",
         "price": 299.99,
         "discount": 249.99,
@@ -336,7 +336,7 @@ const bestProducts = [
         "rating": Math.floor(Math.random() * 5) + 1
     },
     {
-        "id": 7,
+        "id": 37,
         "name": "Adjustable Standing Desk Chair",
         "price": 189.99,
         "discount": 149.99,
@@ -345,7 +345,7 @@ const bestProducts = [
         "rating": Math.floor(Math.random() * 5) + 1
     },
     {
-        "id": 28,
+        "id": 38,
         "name": "Pilot G2 Retractable Gel Pens",
         "price": 12.99,
         "discount": 9.99,
@@ -354,7 +354,7 @@ const bestProducts = [
         "rating": Math.floor(Math.random() * 5) + 1
     },
     {
-        "id": 29,
+        "id": 39,
         "name": "Moleskine Classic Hardcover Notebook",
         "price": 19.99,
         "discount": 15.99,
@@ -363,7 +363,7 @@ const bestProducts = [
         "rating": Math.floor(Math.random() * 5) + 1
     },
     {
-        "id": 30,
+        "id": 40,
         "name": "Post-it Super Sticky Notes",
         "price": 8.99,
         "discount": 6.99,
@@ -372,7 +372,7 @@ const bestProducts = [
         "rating": Math.floor(Math.random() * 5) + 1
     },
     {
-        "id": 31,
+        "id": 41,
         "name": "Pentel Twist-Erase Mechanical Pencils",
         "price": 14.99,
         "discount": 11.99,
@@ -381,7 +381,7 @@ const bestProducts = [
         "rating": Math.floor(Math.random() * 5) + 1
     },
     {
-        "id": 32,
+        "id": 42,
         "name": "Sharpie Permanent Markers - Assorted Colors",
         "price": 16.99,
         "discount": 12.99,
@@ -390,7 +390,7 @@ const bestProducts = [
         "rating": Math.floor(Math.random() * 5) + 1
     },
     {
-        "id": 33,
+        "id": 43,
         "name": "BIC Wite-Out Correction Tape",
         "price": 7.99,
         "discount": 5.99,
@@ -399,7 +399,7 @@ const bestProducts = [
         "rating": Math.floor(Math.random() * 5) + 1
     },
     {
-        "id": 34,
+        "id": 44,
         "name": "Five Star Spiral Notebook - College Ruled",
         "price": 10.99,
         "discount": 8.99,
@@ -408,7 +408,7 @@ const bestProducts = [
         "rating": Math.floor(Math.random() * 5) + 1
     },
     {
-        "id": 33,
+        "id": 45,
         "name": "Staedtler Triangular Colored Pencils - 24 Pack",
         "price": 13.99,
         "discount": 10.99,
@@ -417,7 +417,7 @@ const bestProducts = [
         "rating": Math.floor(Math.random() * 5) + 1
     },
     {
-        "id": 34,
+        "id": 45,
         "name": "Scotch Heavy Duty Packing Tape",
         "price": 9.99,
         "discount": 7.99,
@@ -426,7 +426,7 @@ const bestProducts = [
         "rating": Math.floor(Math.random() * 5) + 1
     },
     {
-        "id": 35,
+        "id": 46,
         "name": "Elmer's Disappearing Purple Glue Sticks - 6 Pack",
         "price": 5.99,
         "discount": 4.99,
@@ -435,7 +435,7 @@ const bestProducts = [
         "rating": Math.floor(Math.random() * 5) + 1
     },
     {
-        "id": 36,
+        "id": 47,
         "name": "Oxford 3x5 Index Cards - Ruled",
         "price": 6.99,
         "discount": 5.49,
@@ -444,7 +444,7 @@ const bestProducts = [
         "rating": Math.floor(Math.random() * 5) + 1
     },
     {
-        "id": 37,
+        "id": 48,
         "name": "Swingline Stapler with 5000 Staples",
         "price": 15.99,
         "discount": 12.99,
@@ -453,7 +453,7 @@ const bestProducts = [
         "rating": Math.floor(Math.random() * 5) + 1
     },
     {
-        id: 1,
+        id: 49,
         name: "ANRABESS Women's Long Sleeve V Neck Sweater",
         price: 23.99,
         discount: 16.99,
@@ -462,7 +462,7 @@ const bestProducts = [
         rating: Math.floor(Math.random() * 5) + 1,
     },
     {
-        id: 2,
+        id: 50,
         name: "Trendy Queen Women's Oversized Summer T-Shirt",
         price: 19.99,
         discount: 14.99,
@@ -471,7 +471,7 @@ const bestProducts = [
         rating: Math.floor(Math.random() * 5) + 1,
     },
     {
-        id: 3,
+        id: 51,
         name: "Dokotoo Women's Casual Crew Neck Sweatshirt",
         price: 32.99,
         discount: 27.09,
@@ -480,7 +480,7 @@ const bestProducts = [
         rating: Math.floor(Math.random() * 5) + 1,
     },
     {
-        id: 4,
+        id: 52,
         name: "AUTOMET Women's Casual Basic T-Shirt",
         price: 16.99,
         discount: 14.99,
@@ -489,7 +489,7 @@ const bestProducts = [
         rating: Math.floor(Math.random() * 5) + 1,
     },
     {
-        id: 5,
+        id: 53,
         name: "ANRABESS Women's Summer 2 Piece Outfit",
         price: 46.99,
         discount: 33.99,
@@ -498,7 +498,7 @@ const bestProducts = [
         rating: Math.floor(Math.random() * 5) + 1,
     },
     {
-        id: 6,
+        id: 54,
         name: "Dokotoo Women's Oversized Denim Jacket",
         price: 60.99,
         discount: 46.96,
@@ -507,7 +507,7 @@ const bestProducts = [
         rating: Math.floor(Math.random() * 5) + 1,
     },
     {
-        id: 7,
+        id: 55,
         name: "AUTOMET Women's Zip Up Hoodie",
         price: 52.99,
         discount: 34.99,
@@ -516,7 +516,7 @@ const bestProducts = [
         rating: Math.floor(Math.random() * 5) + 1,
     },
     {
-        id: 8,
+        id: 56,
         name: "ANRABESS Women's Striped Oversized Sweatshirt",
         price: 29.99,
         discount: 26.99,
@@ -525,7 +525,7 @@ const bestProducts = [
         rating: Math.floor(Math.random() * 5) + 1,
     },
     {
-        id: 9,
+        id: 57,
         name: "AUTOMET Women's Leather Jacket",
         price: 54.99,
         discount: 49.99,
@@ -534,7 +534,7 @@ const bestProducts = [
         rating: Math.floor(Math.random() * 5) + 1,
     },
     {
-        id: 10,
+        id: 58,
         name: "Dokotoo Women's Waffle Knit Shacket",
         price: 39.99,
         discount: 32.99,
@@ -543,7 +543,7 @@ const bestProducts = [
         rating: Math.floor(Math.random() * 5) + 1,
     },
     {
-        id: 11,
+        id: 59,
         name: "YESNO Women's Bohemian Floral Maxi Dress",
         price: 45.99,
         discount: 39.99,
@@ -552,7 +552,7 @@ const bestProducts = [
         rating: Math.floor(Math.random() * 5) + 1,
     },
     {
-        id: 12,
+        id: 60,
         name: "PRETTYGARDEN Women's Blazer",
         price: 59.99,
         discount: 49.99,
@@ -561,7 +561,7 @@ const bestProducts = [
         rating: Math.floor(Math.random() * 5) + 1,
     },
   {  
-    id: 1,
+    id: 61,
     name: "3PCS Suction Cup Spinner Toy",
     price: 567,
     discount: 68,
@@ -571,7 +571,7 @@ const bestProducts = [
 },
 
 {
-    id: 2,
+    id: 62,
     name: "Baby Bath Elephant Water Spray Toy",
     price: 337,
     discount: 68,
@@ -580,7 +580,7 @@ const bestProducts = [
     rating: Math.floor(Math.random() * 5) + 1,
 },
 {
-    id: 3,
+    id: 63,
     name: "Manhattan Star Ball Soft Silicone Rattle",
     price: 389,
     discount: 75,
@@ -589,7 +589,7 @@ const bestProducts = [
     rating: Math.floor(Math.random() * 5) + 1,
 },
 {
-    id: 4,
+    id: 64,
     name: "5pcs Colorful Shaking Jhunjhuni Toy Set",
     price: 989,
     discount: 40,
@@ -597,7 +597,7 @@ const bestProducts = [
     rating: Math.floor(Math.random() * 5) + 1,
 },
 {
-    id: 5,
+    id: 65,
     name: "HelloKimi 7PCS Baby Rattles Set",
     price: 1079,
     discount: 40,
@@ -605,7 +605,7 @@ const bestProducts = [
     rating: Math.floor(Math.random() * 5) + 1,
 },
 {
-    id: 6,
+    id: 66,
     name: "Soft Cartoon Baby Cloth Book",
     price: 191,
     discount: 44,
@@ -613,7 +613,7 @@ const bestProducts = [
     rating: Math.floor(Math.random() * 5) + 1,
 },
 {
-    id: 7,
+    id: 67,
     name: "RFL Toys Frogy Slider",
     price: 2726,
     discount: 6,
@@ -621,7 +621,7 @@ const bestProducts = [
     rating: Math.floor(Math.random() * 5) + 1,
 },
 {
-    id: 8,
+    id: 68,
     name: "RFL Playtime Yao Yao Fish Toy",
     price: 1880,
     discount: 6,
@@ -630,7 +630,7 @@ const bestProducts = [
     rating: Math.floor(Math.random() * 5) + 1,
 },
 {
-    id: 9,
+    id: 69,
     name: "RFL Playtime Chicken Rider",
     price: 1520,
     discount: 6,
@@ -639,7 +639,7 @@ const bestProducts = [
     rating: Math.floor(Math.random() * 5) + 1,
 },
 {
-    id: 10,
+    id: 70,
     name: "Baby Walker with Music and Light",
     price: 2650,
     discount: 7,
@@ -649,7 +649,7 @@ const bestProducts = [
 },
 
 {
-    id: 1,
+    id: 71,
     name: "Dog Grooming Vacuum, Pet Vacuum Grooming Kit",
     price:179,
     discount:89,
@@ -658,7 +658,7 @@ const bestProducts = [
     rating: Math.floor(Math.random() * 5) + 1,
 },
 {
-    id: 2,
+    id: 72,
     name: "Swihauk Self Cleaning Slicker Brush",
     price: 20,
     discount: 16,
@@ -667,7 +667,7 @@ const bestProducts = [
     rating: Math.floor(Math.random() * 5) + 1,
 },
 {
-    id: 3,
+    id: 73,
     name: "Cat Hair Brush",
     price: 16,
     discount: 7,
@@ -676,7 +676,7 @@ const bestProducts = [
     rating: Math.floor(Math.random() * 5) + 1,
 },
 {
-    id: 4,
+    id: 74,
     name: " Dog Grooming Wipes",
     price: 27,
     discount:26,
@@ -685,7 +685,7 @@ const bestProducts = [
     rating: Math.floor(Math.random() * 5) + 1,
 },
 {
-    id: 5,
+    id: 75,
     name: "Pet Grooming Gloves",
     price: 249,
     discount: 219,
@@ -694,7 +694,7 @@ const bestProducts = [
     rating: Math.floor(Math.random() * 5) + 1,
 },
 {
-    id: 6,
+    id: 76,
     name: "EQyss Avocado Mist Pet Spray Conditioner",
     price: 649.97,
     discount: 589.99,
@@ -703,7 +703,7 @@ const bestProducts = [
     rating: Math.floor(Math.random() * 5) + 1,
 },
 {
-    id: 7,
+    id: 77,
     name: "Car Cleaning Gun Detailing Interior Dryer Air Blow Gun",
     price: 49,
     discount: 39,
@@ -713,7 +713,7 @@ const bestProducts = [
 },
 
 {
-    id: 8,
+    id: 78,
     name: "Compressed Air Duster",
     price: 49,
     discount: 33,
@@ -722,7 +722,7 @@ const bestProducts = [
     rating: Math.floor(Math.random() * 5) + 1,
 },
 {
-    id: 9,
+    id: 79,
     name: "German Beard & Mustache Scissors",
     price: 15,
     discount: 12,
@@ -731,7 +731,7 @@ const bestProducts = [
     rating: Math.floor(Math.random() * 5) + 1,
 },
 {
-    id: 10,
+    id: 80,
     name: "The Liquid8r",
     price: 28,
     discount: 19,
@@ -741,7 +741,7 @@ const bestProducts = [
 },
 
 {
-    id: 1,
+    id: 81,
     name: "Hill's Science Diet Adult Sensitive Stomach & Skin Chicken Recipe Dry Cat Food",
     price: 18.99,
     discount: 14.99,
@@ -750,7 +750,7 @@ const bestProducts = [
     rating: Math.floor(Math.random() * 5) + 1,
 },
 {
-    id: 2,
+    id: 82,
     name: "Purina Pro Plan Savor Adult Shredded Blend Chicken & Rice Formula Dry Dog Food",
     price: 21.99,
     discount: 17.99,
@@ -759,7 +759,7 @@ const bestProducts = [
     rating: Math.floor(Math.random() * 5) + 1,
 },
 {
-    id: 3,
+    id: 83,
     name: "Royal Canin Size Health Nutrition Small Adult Formula Dry Dog Food",
     price: 27.99,
     discount: 24.99,
@@ -768,7 +768,7 @@ const bestProducts = [
     rating: Math.floor(Math.random() * 5) + 1,
 },
 {
-    id: 4,
+    id: 84,
     name: "Hill's Science Diet Adult 7+ Chicken Recipe Dry Dog Food",
     price: 22.99,
     discount: 18.99,
@@ -777,7 +777,7 @@ const bestProducts = [
     rating: Math.floor(Math.random() * 5) + 1,
 },
 {
-    id: 5,
+    id: 85,
     name: "Iams ProActive Health Adult Minichunks Chicken Dog Food",
     price: 28.99,
     discount: 23.99,
@@ -786,7 +786,7 @@ const bestProducts = [
     rating: Math.floor(Math.random() * 5) + 1,
 },
 {
-    id: 6,
+    id: 86,
     name: "Blue Buffalo Life Protection Formula Adult Chicken & Brown Rice Recipe Dry Dog Food",
     price: 45.99,
     discount: 39.99,
@@ -795,7 +795,7 @@ const bestProducts = [
     rating: Math.floor(Math.random() * 5) + 1,
 },
 {
-    id: 7,
+    id: 87,
     name: "Natural Balance L.I.D. Limited Ingredient Diets Sweet Potato & Fish Formula Dry Dog Food",
     price: 38.99,
     discount: 32.99,
@@ -804,7 +804,7 @@ const bestProducts = [
     rating: Math.floor(Math.random() * 5) + 1,
 },
 {
-    id: 8,
+    id: 88,
     name: "Purina ONE Natural Sensitive Skin & Stomach Salmon & Rice Formula Dry Dog Food",
     price: 27.99,
     discount: 22.99,
@@ -813,7 +813,7 @@ const bestProducts = [
     rating: Math.floor(Math.random() * 5) + 1,
 },
 {
-    id: 9,
+    id: 89,
     name: "Merrick Grain-Free Texas Beef & Sweet Potato Recipe Dry Dog Food",
     price: 48.99,
     discount: 43.99,
@@ -822,7 +822,7 @@ const bestProducts = [
     rating: Math.floor(Math.random() * 5) + 1,
 },
 {
-    id: 10,
+    id: 90,
     name: "Wellness CORE RawRev High-Protein, Raw, Freeze-Dried Turkey & Chicken Recipe Dry Dog Food",
     price: 34.99,
     discount: 29.99,
@@ -831,7 +831,7 @@ const bestProducts = [
     rating: Math.floor(Math.random() * 5) + 1,
 },
 {
-    id: 11,
+    id: 91,
     name: "Taste of the Wild High Prairie Canine Recipe with Roasted Bison & Roasted Roam Dry Dog Food",
     price: 43.99,
     discount: 39.99,
@@ -840,7 +840,7 @@ const bestProducts = [
     rating: Math.floor(Math.random() * 5) + 1,
 },
 {
-    id: 12,
+    id: 92,
     name: "Orijen Original Dry Dog Food",
     price: 55.99,
     discount: 49.99,
@@ -862,13 +862,18 @@ let cart = [];
 // Listen for input in the search field
 document.getElementById('search-input').addEventListener('input', function () {
     const query = this.value.toLowerCase();
+    console.log(query);  // Debug: log the query input value
+
     const filteredProducts = bestProducts.filter(product => {
         return product.name.toLowerCase().includes(query) || product.description.toLowerCase().includes(query);
     });
 
+    console.log(filteredProducts);  // Debug: log the filtered products array
+
     // Display the filtered products
     displayFilteredProducts(filteredProducts);
 });
+
 
 // Function to display the filtered products
 function displayFilteredProducts(products) {
